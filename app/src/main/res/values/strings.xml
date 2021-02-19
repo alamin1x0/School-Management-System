@@ -1,0 +1,33 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <string name="app_name">Shyampur </string>
+
+    <string name="bold" tools:ignore="ReferenceType">@font/latobold</string>
+    <string name="light" tools:ignore="ReferenceType">@font/latolight</string>
+    <string name="regular" tools:ignore="ReferenceType">@font/latoregular</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="start">Start</string>
+    <string name="close">Close</string>
+
+
+
+    <string name="about_collage1"> Shyampur High School Puranapoil  was one of them which is in a pleasant environment adorned with numerous plants, open and free from noise.  This High was started with Science and Humanities  in 1964.  There are academic buildings, Workshop/Laboratory and the best educational facilities in this large institution of 6.5 acres of land. There are a commodious library enriched with 5500 books for earning knowledge, a mosque next to the entrance of the institution, a large auditorium for cultural studies and a large playground.
+
+ </string>
+
+    <string name="about_collage">Shyampur High School Puranapoil  was one of them which is in a pleasant environment adorned with numerous plants, open and free from noise.  This High was started with Science and Humanities  in 1964.  There are academic buildings, Workshop/Laboratory and the best educational facilities in this large institution of 6.5 acres of land. There are a commodious library enriched with 5500 books for earning knowledge, a mosque next to the entrance of the institution, a large auditorium for cultural studies and a large playground.</string>
+
+    <string name="autolink_text">Name: Md Al-Amin Islam Sakib \nEmail: dev3sakib@gmail.com \nPhone: +8801762868864 \nWebsite: http://msainfo.cf
+
+    </string>
+
+
+    <string-array name="theme">
+
+        <item>System Default</item>
+        <item>Dark</item>
+        <item>Light</item>
+
+    </string-array>
+
+</resources>

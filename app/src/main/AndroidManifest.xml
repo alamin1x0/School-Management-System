@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.schoolapp">
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/logo"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/logo"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.SchoolApp">
+        <activity android:name=".dev"
+            android:parentActivityName=".MainActivity"/>
+        <activity android:name=".MainActivity" />
+        <activity
+            android:name=".Developer"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".VideoLucture"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".WebSiteActivity"
+            android:parentActivityName=".MainActivity" />
+        <activity android:name=".ebook.PdfViewerActivity" />
+        <activity android:name=".FullImageView" />
+        <activity
+            android:name=".ebook.EbookActivity"
+            android:parentActivityName=".MainActivity" />
+        <activity android:name=".SplasnScreen"
+            android:theme="@style/Theme.SplashScreen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
