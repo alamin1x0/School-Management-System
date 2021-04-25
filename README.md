@@ -1,3 +1,6 @@
+School Management System App
+
+
 ![1s](https://user-images.githubusercontent.com/55847412/115981235-2b0e8400-a5b4-11eb-9f19-2de76a8c466d.jpg)
 ![2s](https://user-images.githubusercontent.com/55847412/115981249-424d7180-a5b4-11eb-8365-c78e8991e317.jpg)
 ![3s](https://user-images.githubusercontent.com/55847412/115981251-44173500-a5b4-11eb-8a82-5606a8b7230e.jpg)
