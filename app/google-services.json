@@ -1,0 +1,69 @@
+{
+  "project_info": {
+    "project_number": "361945011046",
+    "firebase_url": "https://admin-dash-42c58-default-rtdb.firebaseio.com",
+    "project_id": "admin-dash-42c58",
+    "storage_bucket": "admin-dash-42c58.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:361945011046:android:c8ac83f460326c61406ea7",
+        "android_client_info": {
+          "package_name": "com.example.admindashboard"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "361945011046-vjv297v78j28k61dtmhpaepmhcdrp6pi.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDl8-IFWT0mtChukgmfPrM2k6B9JzU0_eQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "361945011046-vjv297v78j28k61dtmhpaepmhcdrp6pi.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:361945011046:android:ba904766e8278cdd406ea7",
+        "android_client_info": {
+          "package_name": "com.example.shc_learing_app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "361945011046-vjv297v78j28k61dtmhpaepmhcdrp6pi.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDl8-IFWT0mtChukgmfPrM2k6B9JzU0_eQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "361945011046-vjv297v78j28k61dtmhpaepmhcdrp6pi.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

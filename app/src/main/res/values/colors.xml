@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#0277bd</color>
+    <color name="colorPrimaryDark">#004c8c</color>
+    <color name="colorAccent">#0277bd</color>
+
+    <color name="textTitle">#0C2EED</color>
+    <color name="textHistory">#333232</color>
+
+
+    <color name="textColor">#3f3b3b</color>
+    <color name="titleColor">#1b272c</color>
+    <color name="darkColor">#313131</color>
+    <color name="grey">#828080</color>
+    <color name="grey1">#4f4f4f</color>
+    <color name="grey2">#d6d6d6</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="departmentColor">#05487E</color>
+
+
+    <color name="searchwhite">#FFFFFF</color>
+    <color name="searchblack">#000000</color>
+
+
+    <color name="otp">#25d366</color>
+    <color name="red">#EA1606</color>
+
+</resources>

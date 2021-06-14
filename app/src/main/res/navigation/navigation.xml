@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation"
+    app:startDestination="@id/navigation_home">
+
+    <fragment android:id="@+id/navigation_home"
+        android:name="com.example.shc_learing_app.ui.home.HomeFragment"
+        android:label="হোম"
+        tools:layout="@layout/fragment_home"/>
+
+
+    <fragment android:id="@+id/navigation_notice"
+        android:name="com.example.shc_learing_app.ui.notice.NoticeFragment"
+        android:label="নোটিশ"
+        tools:layout="@layout/fragment_notice"/>
+
+    <fragment android:id="@+id/navigation_faculty_"
+        android:name="com.example.shc_learing_app.ui.faculty.FacultyFragment"
+        android:label="শিক্ষক"
+        tools:layout="@layout/fragment_faculty"/>
+
+    <fragment android:id="@+id/navigation_gallery"
+        android:name="com.example.shc_learing_app.ui.gallery.GalleryFragment"
+        android:label="গ্যালারী"
+        tools:layout="@layout/fragment_gallery"/>
+
+<!--    <fragment android:id="@+id/navigation_student"-->
+<!--        android:name="com.example.shc_learing_app.ui.student.StudentFragment"-->
+<!--        android:label="Students"-->
+<!--        tools:layout="@layout/fragment_student"/>-->
+
+    <fragment android:id="@+id/navigation_about"
+        android:name="com.example.shc_learing_app.ui.about.AboutFragment"
+        android:label="সম্পর্কে"
+        tools:layout="@layout/fragment_about"/>
+
+
+<!--    Home Notice Teacher Gallery About-->
+
+
+
+
+
+
+
+</navigation>

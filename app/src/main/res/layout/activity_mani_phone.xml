@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".otp.ManiPhone">
+
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/mainlogo"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:id="@+id/logo">
+
+    </ImageView>
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="SHS অ্যাপটি আপনার প্রবেশকৃত নম্বরে ওটিপি প্রেরণ করবে"
+        android:textSize="20sp"
+        android:textAlignment="center"
+        android:padding="20dp"
+        android:textStyle="bold"
+        android:textColor="#6e6363"
+        android:layout_below="@+id/logo"
+        android:id="@+id/textHeading"
+        android:gravity="center_horizontal">
+
+    </TextView>
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:id="@+id/centerHorizontalline">
+
+    </RelativeLayout>
+
+
+    <com.hbb20.CountryCodePicker
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        app:ccp_areaCodeDetectedCountry="true"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="100dp"
+        android:layout_marginRight="100dp"
+        android:id="@+id/countrycodepicker"
+        app:ccp_autoDetectCountry="true"
+        android:layout_above="@id/centerHorizontalline"
+        android:layout_marginBottom="10dp">
+
+    </com.hbb20.CountryCodePicker>
+
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="70dp"
+        android:layout_marginRight="70dp"
+        android:id="@+id/getphoneNumber"
+        android:hint="আপনার ফোন নম্বর লিখুন"
+        android:textAlignment="center"
+        android:inputType="number"
+        android:textColor="@color/black"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/centerHorizontalline"
+        android:gravity="center_horizontal">
+
+    </EditText>
+
+
+    <android.widget.Button
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_below="@id/getphoneNumber"
+        android:id="@+id/sendotpbutton"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:textColor="@color/white"
+        android:text="ওটিপি"
+        android:textSize="15sp"
+        android:paddingLeft="40dp"
+        android:paddingRight="40dp"
+        android:background="@color/textTitle">
+
+    </android.widget.Button>
+
+
+    <ProgressBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/sendotpbutton"
+        android:id="@+id/progressBarOTPmain"
+        android:visibility="invisible"
+        android:layout_marginTop="30dp">
+
+    </ProgressBar>
+
+
+
+
+
+</RelativeLayout>

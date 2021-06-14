@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:id="@+id/navigation_home"
+        android:icon="@drawable/ic_home"
+        android:title="হোম"
+        />
+
+    <item android:id="@+id/navigation_notice"
+        android:icon="@drawable/ic_newnotice"
+        android:title="নোটিশ"
+        />
+
+    <item android:id="@+id/navigation_faculty_"
+        android:icon="@drawable/ic_teacher"
+        android:title="শিক্ষক"
+        />
+
+    <item android:id="@+id/navigation_gallery"
+        android:icon="@drawable/ic_image"
+        android:title="গ্যালারী"
+        />
+
+<!--    <item android:id="@+id/navigation_student"-->
+<!--        android:icon="@drawable/aboutcollage"-->
+<!--        android:title="Student"-->
+<!--        />-->
+
+
+    <item android:id="@+id/navigation_about"
+        android:icon="@drawable/ic_schooladmin"
+        android:title="সম্পর্কে"
+        />
+
+
+</menu>

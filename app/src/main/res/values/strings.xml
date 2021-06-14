@@ -1,0 +1,32 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <string name="app_name"> SHS </string>
+
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="start">Start</string>
+    <string name="close">Close</string>
+
+    <string name="about_collage1"> শ্যামপুর উচ্চ বিদ্যালয়, মনোরম পরিবেশ উন্মুক্ত ও শব্দহীন পরিবেশে গাছের সাথে সজ্জিত। এই উচ্চ বিদ্যালয়টি ১৫ শতকে বিজ্ঞান এবং মানবিক শাখা দিয়ে শুরু হয়েছিল। ৫.৫ একর জমির বিশাল এই প্রতিষ্ঠানের রয়েছে একাডেমিক ভবন, কর্মশালা, পরীক্ষাগার এবং সর্বোত্তম শিক্ষাগত সুবিধা। জ্ঞান অর্জনের জন্য ৪০০০টি বই  সমন্বিত গ্রন্থাগার, প্রতিষ্ঠানের প্রবেশপথের পাশের একটি মসজিদ এবং একটি বিশাল খেলার মাঠ রয়েছে।।</string>
+
+
+    <string name="about_collage12"> Shyampur High School Puranapoil  was one of them which is in a pleasant environment adorned with numerous plants, open and free from noise.  This High was started with Science and Humanities  in 1964.  There are academic buildings, Workshop/Laboratory and the best educational facilities in this large institution of 6.5 acres of land. There are a commodious library enriched with 5500 books for earning knowledge, a mosque next to the entrance of the institution, a large auditorium for cultural studies and a large playground.
+
+ </string>
+
+    <string name="about_collage">Shyampur High School Puranapoil  was one of them which is in a pleasant environment adorned with numerous plants, open and free from noise.  This High was started with Science and Humanities  in 1964.  There are academic buildings, Workshop/Laboratory and the best educational facilities in this large institution of 6.5 acres of land. There are a commodious library enriched with 5500 books for earning knowledge, a mosque next to the entrance of the institution, a large auditorium for cultural studies and a large playground.</string>
+
+    <string name="autolink_text"> নামঃ  মোঃ আল-আমিন  ইসলাম  সাকিব \n  ইমেল: alaminsakib.cse@gmail.com \n  ফোন: +8801762868864 \n  ওয়েবসাইট: https://alamin-sakib.web.app
+
+    </string>
+
+    <string-array name="theme">
+
+        <item>System Default</item>
+        <item>Dark</item>
+        <item>Light</item>
+
+    </string-array>
+
+</resources>
