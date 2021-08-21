@@ -11,7 +11,7 @@
     <ImageView
         android:layout_width="100dp"
         android:layout_height="100dp"
-        android:src="@drawable/mainlogo"
+        android:src="@drawable/shsplaystore"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="40dp"
         android:id="@+id/logo">
@@ -27,7 +27,7 @@
         android:textAlignment="center"
         android:padding="20dp"
         android:textStyle="bold"
-        android:textColor="#6e6363"
+        android:textColor="@color/titelcolorbd"
         android:layout_below="@+id/logo"
         android:id="@+id/textHeading"
         android:gravity="center_horizontal">
@@ -54,6 +54,7 @@
         android:layout_marginRight="100dp"
         android:id="@+id/countrycodepicker"
         app:ccp_autoDetectCountry="true"
+        app:ccpDialog_textColor="@color/titelcolorbd"
         android:layout_above="@id/centerHorizontalline"
         android:layout_marginBottom="10dp">
 
@@ -69,7 +70,6 @@
         android:hint="আপনার ফোন নম্বর লিখুন"
         android:textAlignment="center"
         android:inputType="number"
-        android:textColor="@color/black"
         android:layout_marginTop="10dp"
         android:layout_below="@+id/centerHorizontalline"
         android:gravity="center_horizontal">
@@ -89,7 +89,7 @@
         android:textSize="15sp"
         android:paddingLeft="40dp"
         android:paddingRight="40dp"
-        android:background="@color/textTitle">
+        android:background="@color/titelcolorbd">
 
     </android.widget.Button>
 

@@ -15,7 +15,6 @@
             android:layout_height="76dp"
             android:id="@+id/image"/>
 
-
     </LinearLayout>
 
 </com.google.android.material.card.MaterialCardView>

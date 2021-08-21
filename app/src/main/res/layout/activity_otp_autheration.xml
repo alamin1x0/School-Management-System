@@ -11,7 +11,7 @@
     <ImageView
         android:layout_width="100dp"
         android:layout_height="100dp"
-        android:src="@drawable/mainlogo"
+        android:src="@drawable/shsplaystore"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="40dp"
         android:id="@+id/logo">
@@ -27,7 +27,7 @@
         android:textAlignment="center"
         android:padding="20dp"
         android:textStyle="bold"
-        android:textColor="#6e6363"
+        android:textColor="@color/titelcolorbd"
         android:layout_below="@+id/logo"
         android:id="@+id/textHeading"
         android:gravity="center_horizontal">
@@ -59,7 +59,7 @@
         android:id="@+id/changeNumber"
         android:layout_below="@id/getotp"
         android:layout_centerHorizontal="true"
-        android:textColor="@color/otp"
+        android:textColor="@color/titelcolorbd"
         android:textSize="17sp"
         android:layout_marginTop="15sp">
 
@@ -76,7 +76,7 @@
         android:text="ওটিপি যাচাই করুন"
         android:layout_marginTop="50dp"
         android:paddingRight="40dp"
-        android:background="@color/textTitle">
+        android:background="@color/titelcolorbd">
 
     </android.widget.Button>
 

@@ -12,7 +12,7 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import com.bumptech.glide.Glide;
 import com.example.shc_learing_app.R;
-import com.example.shc_learing_app.ui.faculty.TeacherData;
+import com.example.shc_learing_app.studentlist.StudentListData;
 
 import java.util.List;
 
@@ -24,6 +24,8 @@ public class StudentAdapter extends RecyclerView.Adapter<StudentAdapter.StudentV
         this.list = list;
         this.context = context;
     }
+
+
 
     @NonNull
     @Override
@@ -53,7 +55,7 @@ public class StudentAdapter extends RecyclerView.Adapter<StudentAdapter.StudentV
         return list.size();
     }
 
-    public class StudentViewAdapter extends RecyclerView.ViewHolder {
+    public static class StudentViewAdapter extends RecyclerView.ViewHolder {
 
         private TextView name, phone, address;
         private ImageView imageView;

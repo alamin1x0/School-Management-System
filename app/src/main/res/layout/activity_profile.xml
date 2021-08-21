@@ -121,7 +121,7 @@
         android:paddingTop="10dp"
         android:textSize="20sp"
         android:id="@+id/movetoupdateprofile"
-        android:textColor="@color/textTitle">
+        android:textColor="@color/titelcolorbd">
 
     </TextView>
 

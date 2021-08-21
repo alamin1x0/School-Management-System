@@ -6,11 +6,16 @@
     android:layout_height="match_parent"
     tools:context=".VideoLucture">
 
+        <WebView
+            android:id="@+id/webViewId"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        </WebView>
 
-    <WebView
-        android:id="@+id/webViewId"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent">
-    </WebView>
+
+
+
+
+
 
 </LinearLayout>

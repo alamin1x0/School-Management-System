@@ -10,6 +10,4 @@
         android:src="@drawable/updateschool"
         android:scaleType="fitXY"/>
 
-
-
 </LinearLayout>

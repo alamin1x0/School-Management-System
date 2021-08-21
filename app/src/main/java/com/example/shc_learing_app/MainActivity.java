@@ -25,10 +25,12 @@ import android.view.MenuItem;
 import android.widget.Toast;
 
 import com.example.shc_learing_app.admission.AdmissionActivity;
+import com.example.shc_learing_app.contact.ContactForm;
 import com.example.shc_learing_app.ebook.EbookActivity;
 import com.example.shc_learing_app.otp.ProfileActivity;
 import com.example.shc_learing_app.otp.UpdateProfile;
 import com.example.shc_learing_app.result.ResultActivity;
+import com.example.shc_learing_app.studentlist.StudentList;
 import com.example.shc_learing_app.ui.student.StudentFragment;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 import com.google.android.material.dialog.MaterialAlertDialogBuilder;
@@ -113,7 +115,6 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
 
         toggle = new ActionBarDrawerToggle(this, drawerLayout, R.string.start, R.string.close);
 
-
         drawerLayout.addDrawerListener(toggle);
         toggle.syncState();
 
@@ -186,8 +187,22 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
                 startActivity(intent);
                 break;
 
-            case R.id.navigation_admission:
-                intent = new Intent(MainActivity.this, AdmissionActivity.class);
+            case R.id.navigation_video:
+                intent = new Intent(MainActivity.this, VideoLucture.class);
+                startActivity(intent);
+                break;
+
+            case R.id.navigation_ebook:
+                startActivity(new Intent(this, EbookActivity.class));
+                break;
+
+            case R.id.navigation_studentlist:
+                intent = new Intent(MainActivity.this,StudentList.class);
+                startActivity(intent);
+                break;
+
+            case R.id.navigation_website:
+                intent = new Intent(MainActivity.this,WebSiteActivity.class);
                 startActivity(intent);
                 break;
 
@@ -197,11 +212,25 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
                 break;
 
 
-
-            case R.id.navigation_video:
-                intent = new Intent(MainActivity.this, VideoLucture.class);
+            case R.id.navigation_admission:
+                intent = new Intent(MainActivity.this, AdmissionActivity.class);
                 startActivity(intent);
                 break;
+
+            case R.id.navigation_contact:
+                intent = new Intent(MainActivity.this, ContactForm.class);
+                startActivity(intent);
+                break;
+
+            case R.id.navigation_developer:
+                intent = new Intent(MainActivity.this, developer.class);
+                startActivity(intent);
+                break;
+
+
+
+
+
 
 
 //            case R.id.logout:
@@ -211,25 +240,16 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
 //                break;
 
 
-            case R.id.navigation_ebook:
-                startActivity(new Intent(this, EbookActivity.class));
-                break;
+
 
 
 //            case R.id.navigation_theme:
 //                showDialog();
 //                break;
 
-            case R.id.navigation_website:
-                intent = new Intent(MainActivity.this,WebSiteActivity.class);
-                startActivity(intent);
-                break;
 
 
-            case R.id.navigation_developer:
-                intent = new Intent(MainActivity.this,developer.class);
-                startActivity(intent);
-                break;
+
 
 
             case R.id.navigation_share:

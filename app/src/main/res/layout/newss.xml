@@ -37,7 +37,7 @@
                     android:layout_height="wrap_content"
                     android:text="  স্কুল একাডেমি"
                     android:textSize="20dp"
-                    android:textColor="@color/textTitle"/>
+                    android:textColor="@color/titelcolorbd"/>
 
                 <LinearLayout
                     android:layout_width="match_parent"

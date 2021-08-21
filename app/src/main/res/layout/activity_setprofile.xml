@@ -15,7 +15,7 @@
         android:text="আপনার প্রোফাইল সংরক্ষণ করুন"
         android:layout_above="@+id/getuserimage"
         android:layout_marginBottom="30dp"
-        android:textColor="@color/textTitle"
+        android:textColor="@color/titelcolorbd"
         android:textStyle="bold"
         android:layout_centerHorizontal="true">
 
@@ -70,7 +70,7 @@
         android:textColor="@color/white"
         android:text="প্রোফাইল সংরক্ষণ"
         android:layout_marginTop="50dp"
-        android:background="@color/textTitle">
+        android:background="@color/titelcolorbd">
 
     </android.widget.Button>
 

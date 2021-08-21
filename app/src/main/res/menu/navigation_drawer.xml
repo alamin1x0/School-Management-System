@@ -13,10 +13,16 @@
         android:title="বই"
         android:icon="@drawable/newbook"/>
 
+    <item android:id="@+id/navigation_studentlist"
+        android:title="স্টুডেন্ট"
+        android:icon="@drawable/mortarboard"/>
+
 
     <item android:id="@+id/navigation_website"
         android:title="ওয়েবসাইট"
         android:icon="@drawable/newwebsite"/>
+
+
 
 
     <item android:id="@+id/navigation_share"
@@ -32,6 +38,10 @@
     <item android:id="@+id/navigation_admission"
         android:title="ভর্তি ফরম"
         android:icon="@drawable/newadmission"/>
+
+    <item android:id="@+id/navigation_contact"
+        android:title="অভিযোগ"
+        android:icon="@drawable/contact"/>
 
     <item android:id="@+id/navigation_developer"
         android:title="ডেভোলপার"

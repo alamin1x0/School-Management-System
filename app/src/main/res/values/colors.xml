@@ -22,6 +22,13 @@
     <color name="searchwhite">#FFFFFF</color>
     <color name="searchblack">#000000</color>
 
+    <color name="transparent">#00000000</color>
+    <color name="deeppurple">#7c4dff</color>
+
+    <color name="titelcolorbd">#20ad96</color>
+
+    <color name="headteacher">#c39d7d</color>
+
 
     <color name="otp">#25d366</color>
     <color name="red">#EA1606</color>
