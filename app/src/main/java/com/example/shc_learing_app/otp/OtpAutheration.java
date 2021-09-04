@@ -10,7 +10,6 @@ import android.widget.EditText;
 import android.widget.ProgressBar;
 import android.widget.TextView;
 
-import com.example.shc_learing_app.FullImageView;
 import com.example.shc_learing_app.MainActivity;
 import com.example.shc_learing_app.R;
 import com.google.android.gms.tasks.OnCompleteListener;

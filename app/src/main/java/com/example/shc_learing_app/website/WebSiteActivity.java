@@ -1,4 +1,4 @@
-package com.example.shc_learing_app;
+package com.example.shc_learing_app.website;
 
 import android.os.Bundle;
 import android.webkit.WebSettings;
@@ -6,6 +6,8 @@ import android.webkit.WebView;
 import android.webkit.WebViewClient;
 
 import androidx.appcompat.app.AppCompatActivity;
+
+import com.example.shc_learing_app.R;
 
 public class WebSiteActivity extends AppCompatActivity {
 

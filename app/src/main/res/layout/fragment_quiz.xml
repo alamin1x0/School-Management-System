@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:orientation="vertical"
+    tools:context=".ui.quiz.QuizFragment">
+
+    <ImageView
+        android:id="@+id/image_view"
+        android:layout_centerInParent="true"
+        android:layout_width="360dp"
+        android:layout_height="360dp"
+        android:src="@drawable/ic_quiz"/>
+
+    <Button
+        android:id="@+id/play_quiz"
+        android:backgroundTint="#FA7074"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Start Quiz" />
+
+</RelativeLayout>

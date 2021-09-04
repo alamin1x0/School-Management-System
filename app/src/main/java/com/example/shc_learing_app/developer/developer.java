@@ -1,8 +1,10 @@
-package com.example.shc_learing_app;
+package com.example.shc_learing_app.developer;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
+
+import com.example.shc_learing_app.R;
 
 public class developer extends AppCompatActivity {
 

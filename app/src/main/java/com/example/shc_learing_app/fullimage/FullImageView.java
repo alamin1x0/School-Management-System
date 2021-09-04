@@ -1,4 +1,4 @@
-package com.example.shc_learing_app;
+package com.example.shc_learing_app.fullimage;
 
 import android.os.Bundle;
 import android.view.WindowManager;
@@ -6,6 +6,7 @@ import android.view.WindowManager;
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.bumptech.glide.Glide;
+import com.example.shc_learing_app.R;
 import com.github.chrisbanes.photoview.PhotoView;
 
 public class FullImageView extends AppCompatActivity {

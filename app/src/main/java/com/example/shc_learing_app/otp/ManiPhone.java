@@ -9,7 +9,6 @@ import android.view.View;
 import android.widget.EditText;
 import android.widget.ProgressBar;
 
-import com.example.shc_learing_app.FullImageView;
 import com.example.shc_learing_app.MainActivity;
 import com.example.shc_learing_app.R;
 import com.google.firebase.FirebaseException;
@@ -17,9 +16,6 @@ import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.PhoneAuthCredential;
 import com.google.firebase.auth.PhoneAuthOptions;
 import com.google.firebase.auth.PhoneAuthProvider;
-import com.google.firebase.auth.AuthResult;
-import com.google.firebase.auth.FirebaseAuth;
-import com.google.firebase.auth.FirebaseUser;
 import com.hbb20.CountryCodePicker;
 
 import java.util.concurrent.TimeUnit;

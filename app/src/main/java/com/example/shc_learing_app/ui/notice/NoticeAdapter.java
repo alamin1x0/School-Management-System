@@ -12,7 +12,7 @@ import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.bumptech.glide.Glide;
-import com.example.shc_learing_app.FullImageView;
+import com.example.shc_learing_app.fullimage.FullImageView;
 import com.example.shc_learing_app.R;
 
 import java.util.ArrayList;
@@ -60,6 +60,16 @@ public class NoticeAdapter extends RecyclerView.Adapter<NoticeAdapter.NoticeView
                 context.startActivity(intent);
             }
         });
+
+//        holder.ebookDownload.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//                Intent intent = new Intent(Intent.ACTION_VIEW);
+//                intent.setData(Uri.parse(list.get(position).getImage()));
+//                context.startActivity(intent);
+//            }
+//        });
+
     }
 
     @Override
@@ -70,7 +80,7 @@ public class NoticeAdapter extends RecyclerView.Adapter<NoticeAdapter.NoticeView
     public class NoticeViewAdapter extends RecyclerView.ViewHolder {
 
         private TextView deleteNoticeTitle, date, time;
-        private ImageView deleteNoticeImage;
+        private ImageView deleteNoticeImage,ebookDownload;
 
 
         public NoticeViewAdapter(@NonNull View itemView) {
@@ -79,6 +89,9 @@ public class NoticeAdapter extends RecyclerView.Adapter<NoticeAdapter.NoticeView
             deleteNoticeImage = itemView.findViewById(R.id.deleteNoticeImage);
             date = itemView.findViewById(R.id.date);
             time = itemView.findViewById(R.id.time);
+
+
+//            ebookDownload = itemView.findViewById(R.id.ebookDownload);
         }
     }
 }

@@ -7,7 +7,7 @@
     android:gravity="center"
     android:layout_margin="20dp"
     android:orientation="vertical"
-    tools:context=".developer">
+    tools:context=".developer.developer">
 
     <de.hdodenhof.circleimageview.CircleImageView
         android:layout_width="match_parent"

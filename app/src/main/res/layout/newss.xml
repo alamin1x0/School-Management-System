@@ -101,6 +101,14 @@
             android:scaleType="fitXY"/>
 
 
+<!--        <ImageView-->
+<!--            android:id="@+id/ebookDownload"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:src="@drawable/ic_downward"-->
+<!--            android:layout_marginLeft="-30dp"/>-->
+
+
     </LinearLayout>
 
 </com.google.android.material.card.MaterialCardView>

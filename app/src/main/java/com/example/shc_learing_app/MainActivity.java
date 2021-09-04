@@ -17,7 +17,6 @@ import android.content.Intent;
 import android.content.SharedPreferences;
 import android.net.ConnectivityManager;
 import android.net.NetworkInfo;
-import android.net.Uri;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuInflater;
@@ -26,12 +25,14 @@ import android.widget.Toast;
 
 import com.example.shc_learing_app.admission.AdmissionActivity;
 import com.example.shc_learing_app.contact.ContactForm;
+import com.example.shc_learing_app.developer.developer;
 import com.example.shc_learing_app.ebook.EbookActivity;
 import com.example.shc_learing_app.otp.ProfileActivity;
-import com.example.shc_learing_app.otp.UpdateProfile;
+import com.example.shc_learing_app.quizresult.QuizresultActivity;
 import com.example.shc_learing_app.result.ResultActivity;
 import com.example.shc_learing_app.studentlist.StudentList;
-import com.example.shc_learing_app.ui.student.StudentFragment;
+import com.example.shc_learing_app.video.VideoLucture;
+import com.example.shc_learing_app.website.WebSiteActivity;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 import com.google.android.material.dialog.MaterialAlertDialogBuilder;
 import com.google.android.material.navigation.NavigationView;
@@ -39,8 +40,6 @@ import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.messaging.FirebaseMessaging;
 
 import java.util.Objects;
-
-import es.dmoral.toasty.Toasty;
 
 public class MainActivity extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener {
 
@@ -187,6 +186,12 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
                 startActivity(intent);
                 break;
 
+            case R.id.navigation_quiz:
+                intent = new Intent(MainActivity.this, QuizresultActivity.class);
+                startActivity(intent);
+                break;
+
+
             case R.id.navigation_video:
                 intent = new Intent(MainActivity.this, VideoLucture.class);
                 startActivity(intent);
@@ -202,7 +207,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
                 break;
 
             case R.id.navigation_website:
-                intent = new Intent(MainActivity.this,WebSiteActivity.class);
+                intent = new Intent(MainActivity.this, WebSiteActivity.class);
                 startActivity(intent);
                 break;
 

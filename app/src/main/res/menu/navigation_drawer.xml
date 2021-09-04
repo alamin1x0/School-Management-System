@@ -5,6 +5,11 @@
         android:title="প্রোফাইল"
         android:icon="@drawable/newprofil"/>
 
+    <item android:id="@+id/navigation_quiz"
+        android:title="কুইজ"
+        android:icon="@drawable/ic_baseline_extension_24"/>
+
+
     <item android:id="@+id/navigation_video"
         android:title="ভিডিও লেকচার"
         android:icon="@drawable/newvideo"/>
@@ -21,8 +26,6 @@
     <item android:id="@+id/navigation_website"
         android:title="ওয়েবসাইট"
         android:icon="@drawable/newwebsite"/>
-
-
 
 
     <item android:id="@+id/navigation_share"

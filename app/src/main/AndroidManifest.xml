@@ -14,19 +14,23 @@
         android:roundIcon="@mipmap/shs_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.SHCLearingApp">
-        <activity android:name=".studentlist.StudentList"/>
+        <activity android:name=".quizresult.QuizresultActivity"/>
+       \
+        <activity android:name=".ui.quiz.ScorceActivity" />
+        <activity android:name=".ui.quiz.StartActivity" />
+        <activity android:name=".studentlist.StudentList" />
         <activity android:name=".contact.ContactForm" />
         <activity android:name=".admission.RegistionForm" />
         <activity android:name=".result.ResultActivity" />
-        <activity android:name=".developer" />
+        <activity android:name=".developer.developer" />
         <activity android:name=".admission.AdmissionActivity" />
         <activity android:name=".otp.UpdateProfile" />
         <activity android:name=".otp.ProfileActivity" />
         <activity android:name=".otp.Setprofile" />
         <activity android:name=".otp.OtpAutheration" />
         <activity android:name=".MainActivity" />
-        <activity android:name=".ForgetPasswordActivity" />
-        <activity android:name=".LoginActivity" />
+        <activity android:name=".login.ForgetPasswordActivity" />
+        <activity android:name=".login.LoginActivity" />
         <activity android:name=".otp.SlappScreen">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -35,15 +39,15 @@
             </intent-filter>
         </activity>
         <activity android:name=".otp.ManiPhone" />
-        <activity android:name=".singUp" />
+        <activity android:name=".login.singUp" />
         <activity
-            android:name=".VideoLucture"
+            android:name=".video.VideoLucture"
             android:parentActivityName=".MainActivity" />
         <activity
-            android:name=".WebSiteActivity"
+            android:name=".website.WebSiteActivity"
             android:parentActivityName=".MainActivity" />
         <activity android:name=".ebook.PdfViewerActivity" />
-        <activity android:name=".FullImageView" />
+        <activity android:name=".fullimage.FullImageView" />
         <activity android:name=".ebook.EbookActivity" />
     </application>
 

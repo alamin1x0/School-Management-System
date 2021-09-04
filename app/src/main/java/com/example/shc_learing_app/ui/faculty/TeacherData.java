@@ -1,13 +1,14 @@
 package com.example.shc_learing_app.ui.faculty;
 
 public class TeacherData {
-    private String name, phone, post, image, key;
+    private String name, jon, phone, post, image, key;
 
     public TeacherData() {
     }
 
-    public TeacherData(String name, String phone, String post, String image, String key) {
+    public TeacherData(String name, String jon, String phone, String post, String image, String key) {
         this.name = name;
+        this.jon = jon;
         this.phone = phone;
         this.post = post;
         this.image = image;
@@ -20,6 +21,14 @@ public class TeacherData {
 
     public void setName(String name) {
         this.name = name;
+    }
+
+    public String getJon() {
+        return jon;
+    }
+
+    public void setJon(String jon) {
+        this.jon = jon;
     }
 
     public String getPhone() {

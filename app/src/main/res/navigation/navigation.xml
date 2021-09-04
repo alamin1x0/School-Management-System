@@ -26,18 +26,21 @@
         android:label="গ্যালারী"
         tools:layout="@layout/fragment_gallery"/>
 
-<!--    <fragment android:id="@+id/navigation_student"-->
-<!--        android:name="com.example.shc_learing_app.ui.student.StudentFragment"-->
-<!--        android:label="Students"-->
-<!--        tools:layout="@layout/fragment_student"/>-->
+<!--    <fragment android:id="@+id/navigation_about"-->
+<!--        android:name="com.example.shc_learing_app.ui.about.AboutFragment"-->
+<!--        android:label="সম্পর্কে"-->
+<!--        tools:layout="@layout/fragment_about"/>-->
 
-    <fragment android:id="@+id/navigation_about"
-        android:name="com.example.shc_learing_app.ui.about.AboutFragment"
-        android:label="সম্পর্কে"
-        tools:layout="@layout/fragment_about"/>
+    <fragment android:id="@+id/navigation_quiz"
+        android:name="com.example.shc_learing_app.ui.quiz.QuizFragment"
+        android:label=" কুইজ"
+        tools:layout="@layout/fragment_quiz"/>
 
 
-<!--    Home Notice Teacher Gallery About-->
+    <!--    <fragment android:id="@+id/navigation_student"-->
+    <!--        android:name="com.example.shc_learing_app.ui.student.StudentFragment"-->
+    <!--        android:label="Students"-->
+    <!--        tools:layout="@layout/fragment_student"/>-->
 
 
 

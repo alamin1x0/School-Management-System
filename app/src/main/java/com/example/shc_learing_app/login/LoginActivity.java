@@ -1,4 +1,4 @@
-package com.example.shc_learing_app;
+package com.example.shc_learing_app.login;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
@@ -9,8 +9,9 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
-import android.widget.Toast;
 
+import com.example.shc_learing_app.MainActivity;
+import com.example.shc_learing_app.R;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.OnFailureListener;
 import com.google.android.gms.tasks.Task;
@@ -96,7 +97,7 @@ public class LoginActivity extends AppCompatActivity {
     }
 
     private void openMain() {
-        startActivity(new Intent(LoginActivity.this,MainActivity.class));
+        startActivity(new Intent(LoginActivity.this, MainActivity.class));
         finish();
     }
 

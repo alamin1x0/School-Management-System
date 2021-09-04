@@ -3,12 +3,11 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:layout_margin="4dp">
+    android:layout_margin="5dp">
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginVertical="@dimen/text_margin"
         android:orientation="vertical">
 
         <LinearLayout
@@ -19,7 +18,7 @@
 
             <LinearLayout
                 android:layout_width="0dp"
-                android:layout_height="match_parent"
+                android:layout_height="wrap_content"
                 android:layout_weight="1.5"
                 android:orientation="vertical"
                 android:paddingLeft="12dp"
@@ -54,6 +53,14 @@
                     android:textColor="@color/textColor"
                     android:textIsSelectable="true"
                     android:textSize="@dimen/text_size"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/teacherJon"
+                    android:text="জয়েন ডেট"
+                    android:textColor="@color/textColor"
+                    android:textSize="18sp"/>
 
             </LinearLayout>
 

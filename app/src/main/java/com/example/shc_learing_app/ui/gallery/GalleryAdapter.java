@@ -11,7 +11,7 @@ import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.bumptech.glide.Glide;
-import com.example.shc_learing_app.FullImageView;
+import com.example.shc_learing_app.fullimage.FullImageView;
 import com.example.shc_learing_app.R;
 
 import java.util.List;

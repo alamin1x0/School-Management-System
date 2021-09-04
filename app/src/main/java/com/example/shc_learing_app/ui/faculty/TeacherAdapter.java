@@ -40,6 +40,7 @@ public class TeacherAdapter extends RecyclerView.Adapter<TeacherAdapter.TeacherV
         holder.name.setText(item.getName());
         holder.phone.setText(item.getPhone());
         holder.post.setText(item.getPost());
+        holder.jon.setText(item.getJon());
 
         setAnimation(holder.itemView);
 
@@ -64,7 +65,7 @@ public class TeacherAdapter extends RecyclerView.Adapter<TeacherAdapter.TeacherV
 
     public class TeacherViewAdapter extends RecyclerView.ViewHolder {
 
-        private TextView name, phone, post;
+        private TextView name, phone, post,jon;
         private ImageView imageView;
 
         public TeacherViewAdapter(@NonNull View itemView) {
@@ -73,6 +74,8 @@ public class TeacherAdapter extends RecyclerView.Adapter<TeacherAdapter.TeacherV
             name = itemView.findViewById(R.id.teacherName);
             phone = itemView.findViewById(R.id.teacherPhone);
             post = itemView.findViewById(R.id.teacherPost);
+            jon = itemView.findViewById(R.id.teacherJon);
+
             imageView = itemView.findViewById(R.id.teacherImage);
         }
     }
