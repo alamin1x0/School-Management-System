@@ -1,10 +1,51 @@
+## General
 
-Facebook Page : https://www.facebook.com/alamin1x0page 
+This School-Management System App is Created in Android Studio using Java & Firebase.
 
-Website: https://alamin-sakib.web.app/
+<a id="raw-url" href="apk/Blood Donation App.apk?raw=true"><img src="img/download.svg"  width="180" height=auto>
+</a>
 
-![1](https://user-images.githubusercontent.com/55847412/121863378-9d325800-cd1d-11eb-9ffc-8ca8d32e9cdf.jpg)
-![2](https://user-images.githubusercontent.com/55847412/121863393-a0c5df00-cd1d-11eb-9f72-0150c63ec601.jpg)
-![3](https://user-images.githubusercontent.com/55847412/121863397-a1f70c00-cd1d-11eb-80e5-f8d97dd7f4a3.jpg)
-![4](https://user-images.githubusercontent.com/55847412/121863399-a3283900-cd1d-11eb-8df2-93a6a7e49eab.jpg)
-![5](https://user-images.githubusercontent.com/55847412/121863411-a4f1fc80-cd1d-11eb-8259-85f6e909cc53.jpg)
+## Screenshots
+
+|                                       Splash Screen                |                            Home                           |                            Navigation Drawer                           |
+| :------------------------------------------------------------------: | :-----------------------------------------------------------------: | :------------------------------------------------------------------: |
+| <img src="img/1.png" width=272 height=auto>  | <img src="img/2.png" width=272 height=auto> | <img src="img/3.png" width=272 height=auto>  |
+
+## Dependencies
+
+- Firebase Dependencies
+
+```
+implementation 'com.google.firebase:firebase-database:20.0.2'
+implementation 'com.google.firebase:firebase-storage:20.0.0'
+implementation 'com.google.firebase:firebase-messaging:22.0.0'
+implementation 'androidx.legacy:legacy-support-v4:1.0.0'
+implementation 'com.google.firebase:firebase-firestore:23.0.4'
+implementation 'com.firebaseui:firebase-ui-firestore:7.1.1
+```
+
+- Others Dependencies
+
+```
+implementation 'androidx.navigation:navigation-fragment:2.3.5'
+implementation 'androidx.navigation:navigation-ui:2.3.5'
+implementation 'com.google.android.material:material:1.4.0'
+implementation 'com.github.smarteist:autoimageslider:1.2.0'
+implementation 'com.github.bumptech.glide:glide:4.12.0'
+implementation platform('com.google.firebase:firebase-bom:26.0.0')
+implementation 'com.google.firebase:firebase-analytics'
+implementation 'de.hdodenhof:circleimageview:3.0.1'
+implementation 'androidx.recyclerview:recyclerview:1.2.1'
+implementation 'com.github.barteksc:android-pdf-viewer:2.8.2'
+implementation 'com.github.chrisbanes:PhotoView:2.3.0'
+implementation 'com.google.firebase:firebase-auth:21.0.1'
+implementation 'com.facebook.shimmer:shimmer:0.5.0'
+implementation 'com.github.kk121:File-Loader:1.2'
+implementation 'com.android.support:multidex:1.0.3'
+implementation 'com.github.GrenderG:Toasty:1.5.0'
+implementation 'com.github.ybq:Android-SpinKit:1.4.0'
+implementation 'com.hbb20:ccp:2.5.1'
+implementation 'com.squareup.picasso:picasso:2.71828''
+implementation 'androidx.appcompat:appcompat:1.3.1'
+implementation "com.airbnb.android:lottie:3.4.0"
+```

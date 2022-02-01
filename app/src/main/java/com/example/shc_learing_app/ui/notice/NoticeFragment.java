@@ -41,10 +41,6 @@ public class NoticeFragment extends Fragment {
         View view = inflater.inflate(R.layout.fragment_notice, container, false);
 
 
-
-
-
-
         deleteNoticeRecyclerView = view.findViewById(R.id.deleteNoticeRecyclerView);
         progressBar = view.findViewById(R.id.progressBar);
 

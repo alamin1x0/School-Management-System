@@ -15,7 +15,6 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.SHCLearingApp">
         <activity android:name=".quizresult.QuizresultActivity"/>
-       \
         <activity android:name=".ui.quiz.ScorceActivity" />
         <activity android:name=".ui.quiz.StartActivity" />
         <activity android:name=".studentlist.StudentList" />
