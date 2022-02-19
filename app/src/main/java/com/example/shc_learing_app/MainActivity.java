@@ -76,6 +76,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
                     .setIcon(android.R.drawable.ic_dialog_alert)
                     .setTitle("Internet Connection Please")
                     .setMessage("Please Check your Internet Connection")
+                    .setCancelable(false)
                     .setPositiveButton("Close", new DialogInterface.OnClickListener() {
                         @Override
                         public void onClick(DialogInterface dialog, int which) {
@@ -84,10 +85,6 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
                     })
                     .show();
         }
-
-//        else {
-//            Toast.makeText(MainActivity.this,"", Toast.LENGTH_LONG).show();
-//        }
 
 
         sharedPreferences = this.getSharedPreferences("themes", Context.MODE_PRIVATE);
@@ -152,7 +149,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
 
     @Override
     public boolean onOptionsItemSelected(@NonNull MenuItem item) {
-        if(toggle.onOptionsItemSelected(item)){
+        if (toggle.onOptionsItemSelected(item)) {
             return true;
         }
 //        if (item.getItemId() == R.id.logout){
@@ -178,7 +175,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
     @Override
     public boolean onNavigationItemSelected(@NonNull MenuItem item) {
         Intent intent;
-        switch (item.getItemId()){
+        switch (item.getItemId()) {
 
 
             case R.id.navigation_profile:
@@ -202,7 +199,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
                 break;
 
             case R.id.navigation_studentlist:
-                intent = new Intent(MainActivity.this,StudentList.class);
+                intent = new Intent(MainActivity.this, StudentList.class);
                 startActivity(intent);
                 break;
 
@@ -233,11 +230,6 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
                 break;
 
 
-
-
-
-
-
 //            case R.id.logout:
 //                editor.putString("isLogin", "false");
 //                editor.commit();
@@ -245,16 +237,9 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
 //                break;
 
 
-
-
-
 //            case R.id.navigation_theme:
 //                showDialog();
 //                break;
-
-
-
-
 
 
             case R.id.navigation_share:
@@ -262,9 +247,9 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
                     Intent i = new Intent(Intent.ACTION_SEND);
                     i.setType("text/plain");
                     i.putExtra(Intent.EXTRA_SUBJECT, "SHS_LEARING_APP");
-                    i.putExtra(Intent.EXTRA_TEXT,"https://firebasestorage.googleapis.com/v0/b/admin-dash-42c58.appspot.com/o/App%2FSHS_Testing.apk?alt=media&token=75da9ae6-dd5d-435f-9f4c-68ebb8300327"+getApplicationContext().getPackageName());
-                    startActivity(Intent.createChooser(i,"Share With"));
-                }catch (Exception e){
+                    i.putExtra(Intent.EXTRA_TEXT, "https://firebasestorage.googleapis.com/v0/b/admin-dash-42c58.appspot.com/o/App%2FSHS_Testing.apk?alt=media&token=75da9ae6-dd5d-435f-9f4c-68ebb8300327" + getApplicationContext().getPackageName());
+                    startActivity(Intent.createChooser(i, "Share With"));
+                } catch (Exception e) {
                     Toast.makeText(this, "Unable to share this app.", Toast.LENGTH_SHORT).show();
                 }
 
@@ -299,11 +284,11 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         builder.setPositiveButton("Ok", new DialogInterface.OnClickListener() {
             @Override
             public void onClick(DialogInterface dialog, int i) {
-                if (selected == null){
+                if (selected == null) {
                     selected = themes[i];
                     checkedItem = i;
                 }
-                switch (selected){
+                switch (selected) {
                     case "System Default":
                         AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_FOLLOW_SYSTEM);
 //                       AppCompatDelegate.setDefaultNightMode(MODE_NIGHT_FOLLOW_SYSTEM);
@@ -330,27 +315,25 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         dialog.show();
     }
 
-    private int getCheckedItem(){
+    private int getCheckedItem() {
         return sharedPreferences.getInt(CHECKEDITEM, 0);
     }
 
-    private void setCheckedItem(int i){
+    private void setCheckedItem(int i) {
         editor.putInt(CHECKEDITEM, i);
         editor.apply();
     }
 
     @Override
     public void onBackPressed() {
-        if (drawerLayout.isDrawerOpen(GravityCompat.START)){
+        if (drawerLayout.isDrawerOpen(GravityCompat.START)) {
             drawerLayout.closeDrawer(GravityCompat.START);
-        }else
+        } else
             super.onBackPressed();
     }
 
 
-
-    private boolean isConnected()
-    {
+    private boolean isConnected() {
         ConnectivityManager connectivityManager = (ConnectivityManager) getSystemService(Context.CONNECTIVITY_SERVICE);
 
         NetworkInfo networkInfo = connectivityManager.getActiveNetworkInfo();

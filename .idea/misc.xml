@@ -3,9 +3,11 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="app/src/main/res/drawable/mainlogo.xml" value="0.213" />
+        <entry key="app/src/main/res/drawable/search_background.xml" value="0.213" />
         <entry key="app/src/main/res/layout/activity_developer.xml" value="0.33" />
         <entry key="app/src/main/res/layout/activity_full_image_view.xml" value="0.18342391304347827" />
-        <entry key="app/src/main/res/layout/activity_main.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/activity_main.xml" value="0.33" />
         <entry key="app/src/main/res/layout/activity_video_lucture.xml" value="0.20729166666666668" />
         <entry key="app/src/main/res/layout/activity_web_site.xml" value="0.10081053698074975" />
         <entry key="app/src/main/res/layout/branch_item_layout.xml" value="0.22" />
@@ -14,6 +16,7 @@
         <entry key="app/src/main/res/layout/fragment_gallery.xml" value="0.18342391304347827" />
         <entry key="app/src/main/res/layout/fragment_home.xml" value="0.12092391304347826" />
         <entry key="app/src/main/res/layout/fragment_notice.xml" value="0.18342391304347827" />
+        <entry key="app/src/main/res/menu/bottom_navation.xml" value="0.33" />
       </map>
     </option>
   </component>
