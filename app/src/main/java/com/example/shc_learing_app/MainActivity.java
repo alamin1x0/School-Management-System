@@ -27,9 +27,6 @@ import com.example.shc_learing_app.admission.AdmissionActivity;
 import com.example.shc_learing_app.contact.ContactForm;
 import com.example.shc_learing_app.developer.developer;
 import com.example.shc_learing_app.ebook.EbookActivity;
-import com.example.shc_learing_app.otp.ProfileActivity;
-import com.example.shc_learing_app.quizresult.QuizresultActivity;
-import com.example.shc_learing_app.result.ResultActivity;
 import com.example.shc_learing_app.studentlist.StudentList;
 import com.example.shc_learing_app.video.VideoLucture;
 import com.example.shc_learing_app.website.WebSiteActivity;
@@ -178,15 +175,15 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         switch (item.getItemId()) {
 
 
-            case R.id.navigation_profile:
-                intent = new Intent(MainActivity.this, ProfileActivity.class);
-                startActivity(intent);
-                break;
-
-            case R.id.navigation_quiz:
-                intent = new Intent(MainActivity.this, QuizresultActivity.class);
-                startActivity(intent);
-                break;
+//            case R.id.navigation_profile:
+//                intent = new Intent(MainActivity.this, ProfileActivity.class);
+//                startActivity(intent);
+//                break;
+//
+//            case R.id.navigation_quiz:
+//                intent = new Intent(MainActivity.this, QuizresultActivity.class);
+//                startActivity(intent);
+//                break;
 
 
             case R.id.navigation_video:
@@ -209,8 +206,8 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
                 break;
 
             case R.id.navigation_result:
-                intent = new Intent(MainActivity.this, ResultActivity.class);
-                startActivity(intent);
+//                intent = new Intent(MainActivity.this, ResultActivity.class);
+//                startActivity(intent);
                 break;
 
 

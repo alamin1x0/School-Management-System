@@ -9,17 +9,17 @@
 
     <ImageView
         android:id="@+id/image_view"
-        android:layout_centerInParent="true"
         android:layout_width="360dp"
         android:layout_height="360dp"
-        android:src="@drawable/ic_quiz"/>
+        android:layout_centerInParent="true"
+        android:src="@drawable/ic_quiz" />
 
     <Button
         android:id="@+id/play_quiz"
-        android:backgroundTint="#FA7074"
-        android:layout_alignParentBottom="true"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:backgroundTint="#FA7074"
         android:text="Start Quiz" />
 
 </RelativeLayout>

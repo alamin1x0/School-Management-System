@@ -7,7 +7,6 @@
     tools:context=".login.LoginActivity">
 
 
-
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -32,28 +31,28 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
                         android:text="Welcome to"
                         android:textColor="#fff"
                         android:textSize="25sp"
-                        android:textStyle="bold"
-                        android:layout_gravity="center_horizontal"/>
+                        android:textStyle="bold" />
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
                         android:text="Shyampur High School"
                         android:textColor="#fff"
-                        android:textSize="33sp"
 
-                        android:textStyle="bold"
-                        android:layout_gravity="center_horizontal"/>
+                        android:textSize="33sp"
+                        android:textStyle="bold" />
 
                     <View
                         android:layout_width="80dp"
                         android:layout_height="4dp"
                         android:layout_gravity="center_horizontal"
                         android:layout_marginTop="22dp"
-                        android:background="#c1c1c1"/>
+                        android:background="#c1c1c1" />
 
                 </LinearLayout>
 
@@ -61,11 +60,11 @@
                 <com.google.android.material.card.MaterialCardView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    app:cardCornerRadius="5dp"
-                    app:cardElevation="4dp"
-                    android:layout_marginTop="-60dp"
                     android:layout_marginHorizontal="24dp"
-                    android:layout_marginBottom="12dp">
+                    android:layout_marginTop="-60dp"
+                    android:layout_marginBottom="12dp"
+                    app:cardCornerRadius="5dp"
+                    app:cardElevation="4dp">
 
                     <LinearLayout
                         android:layout_width="match_parent"
@@ -77,42 +76,41 @@
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Login"
-                            android:textSize="22sp"
-                            android:textStyle="bold"
                             android:layout_gravity="center_horizontal"
                             android:layout_margin="16dp"
-                            android:textColor="@android:color/black"/>
-
+                            android:text="Login"
+                            android:textColor="@android:color/black"
+                            android:textSize="22sp"
+                            android:textStyle="bold" />
 
 
                         <com.google.android.material.textfield.TextInputLayout
+                            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
                             android:layout_width="match_parent"
-                            android:layout_height="match_parent"
-                            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+                            android:layout_height="match_parent">
 
                             <com.google.android.material.textfield.TextInputEditText
+                                android:id="@+id/loginEmail"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:layout_marginTop="12dp"
                                 android:hint="Email"
-                                android:inputType="textEmailAddress"
-                                android:id="@+id/loginEmail"/>
+                                android:inputType="textEmailAddress" />
                         </com.google.android.material.textfield.TextInputLayout>
 
                         <com.google.android.material.textfield.TextInputLayout
+                            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
-                            app:passwordToggleEnabled="true"
                             android:layout_marginTop="12dp"
-                            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+                            app:passwordToggleEnabled="true">
 
                             <com.google.android.material.textfield.TextInputEditText
+                                android:id="@+id/loginPassword"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:hint="Password"
-                                android:inputType="textPassword"
-                                android:id="@+id/loginPassword"/>
+                                android:inputType="textPassword" />
 
                         </com.google.android.material.textfield.TextInputLayout>
 
@@ -124,27 +122,26 @@
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:text="Not yet registered ? "/>
+                                android:text="Not yet registered ? " />
 
                             <TextView
+                                android:id="@+id/openReg"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:text=" Register here"
                                 android:layout_marginLeft="8dp"
-                                android:id="@+id/openReg"
-                                android:textColor="@color/colorPrimary"/>
+                                android:text=" Register here"
+                                android:textColor="@color/colorPrimary" />
 
                         </LinearLayout>
 
 
                         <TextView
+                            android:id="@+id/openForgetPassword"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text=" Forget Password "
                             android:layout_marginLeft="8dp"
-                            android:id="@+id/openForgetPassword"
-                            android:textColor="@color/colorPrimary"/>
-
+                            android:text=" Forget Password "
+                            android:textColor="@color/colorPrimary" />
 
 
                     </LinearLayout>
@@ -157,8 +154,8 @@
                     android:id="@+id/loginBtn"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="Login"
-                    android:layout_marginHorizontal="16dp"/>
+                    android:layout_marginHorizontal="16dp"
+                    android:text="Login" />
 
             </LinearLayout>
 

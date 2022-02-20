@@ -1,33 +1,32 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".studentlist.StudentList">
 
-<!--    <androidx.coordinatorlayout.widget.CoordinatorLayout-->
-<!--        xmlns:android="http://schemas.android.com/apk/res/android"-->
-<!--        xmlns:app="http://schemas.android.com/apk/res-auto"-->
-<!--        xmlns:tools="http://schemas.android.com/tools"-->
-<!--        android:layout_width="match_parent"-->
-<!--        android:layout_height="match_parent"-->
-<!--        tools:context=".studentlist.StudentList">-->
+    <!--    <androidx.coordinatorlayout.widget.CoordinatorLayout-->
+    <!--        xmlns:android="http://schemas.android.com/apk/res/android"-->
+    <!--        xmlns:app="http://schemas.android.com/apk/res-auto"-->
+    <!--        xmlns:tools="http://schemas.android.com/tools"-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="match_parent"-->
+    <!--        tools:context=".studentlist.StudentList">-->
 
 
-<!--    <EditText-->
-<!--        android:layout_width="match_parent"-->
-<!--        android:layout_height="50dp"-->
-<!--        android:id="@+id/searchText"-->
-<!--        android:hint="সার্চ"-->
-<!--        android:drawableLeft="@drawable/ic_search"-->
-<!--        android:layout_marginTop="10dp"-->
-<!--        android:padding="8dp"-->
-<!--        android:layout_marginLeft="4dp"-->
-<!--        android:layout_marginRight="4dp"-->
-<!--        android:drawablePadding="6dp"-->
-<!--        android:background="@drawable/search_background"/>-->
+    <!--    <EditText-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="50dp"-->
+    <!--        android:id="@+id/searchText"-->
+    <!--        android:hint="সার্চ"-->
+    <!--        android:drawableLeft="@drawable/ic_search"-->
+    <!--        android:layout_marginTop="10dp"-->
+    <!--        android:padding="8dp"-->
+    <!--        android:layout_marginLeft="4dp"-->
+    <!--        android:layout_marginRight="4dp"-->
+    <!--        android:drawablePadding="6dp"-->
+    <!--        android:background="@drawable/search_background"/>-->
 
 
     <androidx.core.widget.NestedScrollView
@@ -44,70 +43,75 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/alltitile_bg"
+                android:gravity="center"
                 android:text="ক্লাস - ৬"
-                android:gravity="center"
+                android:textColor="@color/white"
                 android:textSize="30sp"
-                android:textColor="@color/titelcolorbd"
-                android:textStyle="bold"
-                android:layout_marginTop="16dp"/>
+                android:textStyle="bold" />
 
             <View
                 android:layout_width="match_parent"
                 android:layout_height="1dp"
+                android:layout_margin="10dp"
                 android:layout_marginVertical="8dp"
-                android:background="#c1c1c1"/>
-
+                android:background="#c1c1c1" />
 
 
             <androidx.recyclerview.widget.RecyclerView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
                 android:id="@+id/class6"
-                android:visibility="gone"
-                android:nestedScrollingEnabled="false"/>
-
-            <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="vertical"
-                android:id="@+id/class6NoData">
-                <include layout="@layout/no_data_found"/>
+                android:nestedScrollingEnabled="false"
+                android:visibility="gone" />
+
+            <LinearLayout
+                android:id="@+id/class6NoData"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <include layout="@layout/no_data_found" />
 
 
             </LinearLayout>
 
 
-
-
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/alltitile_bg"
+                android:gravity="center"
                 android:text="ক্লাস - ৭"
-                android:gravity="center"
+                android:textColor="@color/white"
                 android:textSize="30sp"
-                android:textColor="@color/titelcolorbd"
-                android:textStyle="bold"
-                android:layout_marginTop="16dp"/>
+                android:textStyle="bold" />
 
             <View
                 android:layout_width="match_parent"
                 android:layout_height="1dp"
+                android:layout_margin="10dp"
                 android:layout_marginVertical="8dp"
-                android:background="#c1c1c1"/>
+                android:background="#c1c1c1" />
 
             <androidx.recyclerview.widget.RecyclerView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
                 android:id="@+id/class7"
-                android:visibility="gone"
-                android:nestedScrollingEnabled="false"/>
-
-            <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="vertical"
-                android:id="@+id/class7NoData">
-                <include layout="@layout/no_data_found"/>
+                android:nestedScrollingEnabled="false"
+                android:visibility="gone" />
+
+            <LinearLayout
+                android:id="@+id/class7NoData"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <include layout="@layout/no_data_found" />
 
 
             </LinearLayout>
@@ -116,33 +120,36 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/alltitile_bg"
+                android:gravity="center"
                 android:text="ক্লাস - ৮"
-                android:gravity="center"
+                android:textColor="@color/white"
                 android:textSize="30sp"
-                android:textColor="@color/titelcolorbd"
-                android:textStyle="bold"
-                android:layout_marginTop="16dp"/>
+                android:textStyle="bold" />
 
             <View
                 android:layout_width="match_parent"
                 android:layout_height="1dp"
+                android:layout_margin="10dp"
                 android:layout_marginVertical="8dp"
-                android:background="#c1c1c1"/>
+                android:background="#c1c1c1" />
 
             <androidx.recyclerview.widget.RecyclerView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
                 android:id="@+id/class8"
-                android:visibility="gone"
-                android:nestedScrollingEnabled="false"/>
-
-            <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="vertical"
-                android:id="@+id/class8NoData">
+                android:nestedScrollingEnabled="false"
+                android:visibility="gone" />
 
-                <include layout="@layout/no_data_found"/>
+            <LinearLayout
+                android:id="@+id/class8NoData"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <include layout="@layout/no_data_found" />
 
 
             </LinearLayout>
@@ -151,33 +158,36 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/alltitile_bg"
+                android:gravity="center"
                 android:text="ক্লাস - ৯"
-                android:gravity="center"
+                android:textColor="@color/white"
                 android:textSize="30sp"
-                android:textColor="@color/titelcolorbd"
-                android:textStyle="bold"
-                android:layout_marginTop="16dp"/>
+                android:textStyle="bold" />
 
             <View
                 android:layout_width="match_parent"
                 android:layout_height="1dp"
+                android:layout_margin="10dp"
                 android:layout_marginVertical="8dp"
-                android:background="#c1c1c1"/>
+                android:background="#c1c1c1" />
 
             <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/class9"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:id="@+id/class9"
-                android:visibility="gone"
-                android:nestedScrollingEnabled="false"/>
+                android:nestedScrollingEnabled="false"
+                android:visibility="gone" />
 
             <LinearLayout
+                android:id="@+id/class9NoData"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="vertical"
-                android:id="@+id/class9NoData">
+                android:orientation="vertical">
 
-                <include layout="@layout/no_data_found"/>
+                <include layout="@layout/no_data_found" />
 
 
             </LinearLayout>
@@ -186,37 +196,39 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="ক্লাস - ১০"
+                android:layout_margin="10dp"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/alltitile_bg"
                 android:gravity="center"
+                android:text="ক্লাস - ১০"
+                android:textColor="@color/white"
                 android:textSize="30sp"
-                android:textColor="@color/titelcolorbd"
-                android:textStyle="bold"
-                android:layout_marginTop="16dp"/>
+                android:textStyle="bold" />
 
             <View
                 android:layout_width="match_parent"
                 android:layout_height="1dp"
+                android:layout_margin="10dp"
                 android:layout_marginVertical="8dp"
-                android:background="#c1c1c1"/>
+                android:background="#c1c1c1" />
 
             <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/class10"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:id="@+id/class10"
-                android:visibility="gone"
-                android:nestedScrollingEnabled="false"/>
+                android:nestedScrollingEnabled="false"
+                android:visibility="gone" />
 
             <LinearLayout
+                android:id="@+id/class10NoData"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="vertical"
-                android:id="@+id/class10NoData">
+                android:orientation="vertical">
 
-                <include layout="@layout/no_data_found"/>
+                <include layout="@layout/no_data_found" />
 
 
             </LinearLayout>
-
 
 
         </LinearLayout>

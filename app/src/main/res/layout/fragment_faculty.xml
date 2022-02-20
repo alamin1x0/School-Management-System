@@ -19,33 +19,38 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:background="@drawable/alltitile_bg"
+                android:layout_centerInParent="true"
+                android:gravity="center_horizontal"
                 android:text="প্রধান শিক্ষক"
-                android:gravity="center"
-                android:textStyle="bold"
+                android:paddingTop="8dp"
+                android:textColor="@color/white"
                 android:textSize="25sp"
-                android:textColor="@color/titelcolorbd"
-                android:layout_marginTop="16dp"/>
+                android:textStyle="bold" />
 
             <View
                 android:layout_width="match_parent"
                 android:layout_height="1dp"
+                android:layout_margin="10dp"
                 android:layout_marginVertical="8dp"
-                android:background="#c1c1c1"/>
+                android:background="#c1c1c1" />
 
             <androidx.recyclerview.widget.RecyclerView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
                 android:id="@+id/headTeacher"
-                android:visibility="gone"
-                android:nestedScrollingEnabled="false"/>
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:nestedScrollingEnabled="false"
+                android:visibility="gone" />
 
             <LinearLayout
+                android:id="@+id/headNoData"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="vertical"
-                android:visibility="gone"
-                android:id="@+id/headNoData">
-                <include layout="@layout/no_data_found"/>
+                android:visibility="gone">
+
+                <include layout="@layout/no_data_found" />
 
 
             </LinearLayout>
@@ -54,33 +59,38 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:layout_marginTop="16dp"
+                android:paddingTop="8dp"
+                android:background="@drawable/alltitile_bg"
+                android:gravity="center"
                 android:text="বিজ্ঞান বিভাগ"
-                android:gravity="center"
-                android:textStyle="bold"
+                android:textColor="@color/white"
                 android:textSize="25sp"
-                android:textColor="@color/titelcolorbd"
-                android:layout_marginTop="16dp"/>
+                android:textStyle="bold" />
 
             <View
                 android:layout_width="match_parent"
                 android:layout_height="1dp"
+                android:layout_margin="10dp"
                 android:layout_marginVertical="8dp"
-                android:background="#c1c1c1"/>
+                android:background="#c1c1c1" />
 
             <androidx.recyclerview.widget.RecyclerView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
                 android:id="@+id/csDepartment"
-                android:visibility="gone"
-                android:nestedScrollingEnabled="false"/>
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:nestedScrollingEnabled="false"
+                android:visibility="gone" />
 
             <LinearLayout
+                android:id="@+id/csNoData"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="vertical"
-                android:visibility="gone"
-                android:id="@+id/csNoData">
-                <include layout="@layout/no_data_found"/>
+                android:visibility="gone">
+
+                <include layout="@layout/no_data_found" />
 
 
             </LinearLayout>
@@ -89,35 +99,40 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:paddingTop="8dp"
+
+                android:layout_marginTop="16dp"
+                android:background="@drawable/alltitile_bg"
+                android:gravity="center"
                 android:text="মানবিক বিভাগ"
-                android:gravity="center"
+                android:textColor="@color/white"
                 android:textSize="25sp"
-                android:textColor="@color/titelcolorbd"
-                android:textStyle="bold"
-                android:layout_marginTop="16dp"/>
+                android:textStyle="bold" />
 
             <View
                 android:layout_width="match_parent"
                 android:layout_height="1dp"
+                android:layout_margin="10dp"
                 android:layout_marginVertical="8dp"
-                android:background="#c1c1c1"/>
+                android:background="#c1c1c1" />
 
             <androidx.recyclerview.widget.RecyclerView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
                 android:id="@+id/mechanicalDepartment"
-                android:visibility="gone"
-                android:nestedScrollingEnabled="false"/>
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:nestedScrollingEnabled="false"
+                android:visibility="gone" />
 
             <LinearLayout
+                android:id="@+id/mecNoData"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="vertical"
-                android:visibility="gone"
 
-                android:id="@+id/mecNoData">
+                android:visibility="gone">
 
-                <include layout="@layout/no_data_found"/>
+                <include layout="@layout/no_data_found" />
 
 
             </LinearLayout>
@@ -126,34 +141,39 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:layout_marginTop="16dp"
+                android:paddingTop="8dp"
+
+                android:background="@drawable/alltitile_bg"
+                android:gravity="center"
                 android:text="বাণিজ্য বিভাগ"
-                android:gravity="center"
+                android:textColor="@color/white"
                 android:textSize="25sp"
-                android:textColor="@color/titelcolorbd"
-                android:textStyle="bold"
-                android:layout_marginTop="16dp"/>
+                android:textStyle="bold" />
 
             <View
                 android:layout_width="match_parent"
                 android:layout_height="1dp"
+                android:layout_margin="10dp"
                 android:layout_marginVertical="8dp"
-                android:background="#c1c1c1"/>
+                android:background="#c1c1c1" />
 
             <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/physicsDepartment"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:id="@+id/physicsDepartment"
-                android:visibility="gone"
-                android:nestedScrollingEnabled="false"/>
+                android:nestedScrollingEnabled="false"
+                android:visibility="gone" />
 
             <LinearLayout
+                android:id="@+id/phyNoData"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="vertical"
-                android:visibility="gone"
-                android:id="@+id/phyNoData">
+                android:visibility="gone">
 
-                <include layout="@layout/no_data_found"/>
+                <include layout="@layout/no_data_found" />
 
 
             </LinearLayout>
@@ -162,43 +182,45 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="আইসিটি বিভাগ"
+                android:layout_margin="10dp"
+                android:layout_marginTop="16dp"
+                android:paddingTop="8dp"
+                android:background="@drawable/alltitile_bg"
                 android:gravity="center"
+                android:text="আইসিটি বিভাগ"
+                android:textColor="@color/white"
                 android:textSize="25sp"
-                android:textColor="@color/titelcolorbd"
-                android:textStyle="bold"
-                android:layout_marginTop="16dp"/>
+                android:textStyle="bold" />
 
             <View
                 android:layout_width="match_parent"
                 android:layout_height="1dp"
+                android:layout_margin="10dp"
                 android:layout_marginVertical="8dp"
-                android:background="#c1c1c1"/>
+                android:background="#c1c1c1" />
 
             <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/chmesityDepartment"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:id="@+id/chmesityDepartment"
-                android:visibility="gone"
-                android:nestedScrollingEnabled="false"/>
+                android:nestedScrollingEnabled="false"
+                android:visibility="gone" />
 
             <LinearLayout
+                android:id="@+id/chNoData"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="vertical"
-                android:visibility="gone"
-                android:id="@+id/chNoData">
+                android:visibility="gone">
 
-                <include layout="@layout/no_data_found"/>
+                <include layout="@layout/no_data_found" />
 
 
             </LinearLayout>
-
 
 
         </LinearLayout>
 
     </androidx.core.widget.NestedScrollView>
-
 
 </FrameLayout>

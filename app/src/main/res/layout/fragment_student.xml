@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 
-<androidx.constraintlayout.widget.ConstraintLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -22,78 +21,78 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Students List"
-                android:gravity="center"
-                android:textSize="35sp"
-                android:textColor="#EBDD0563"
-                android:textStyle="bold"
                 android:layout_marginTop="16dp"
-                android:padding="5dp"/>
+                android:gravity="center"
+                android:padding="5dp"
+                android:text="Students List"
+                android:textColor="#EBDD0563"
+                android:textSize="35sp"
+                android:textStyle="bold" />
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:gravity="center"
                 android:text="Class 6"
-                android:gravity="center"
-                android:textSize="30sp"
                 android:textColor="@color/departmentColor"
-                android:textStyle="bold"
-                android:layout_marginTop="16dp"/>
+                android:textSize="30sp"
+                android:textStyle="bold" />
 
             <View
                 android:layout_width="match_parent"
                 android:layout_height="1dp"
                 android:layout_marginVertical="8dp"
-                android:background="#c1c1c1"/>
+                android:background="#c1c1c1" />
 
             <androidx.recyclerview.widget.RecyclerView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
                 android:id="@+id/class6"
-                android:visibility="gone"
-                android:nestedScrollingEnabled="false"/>
-
-            <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="vertical"
-                android:id="@+id/class6NoData">
+                android:nestedScrollingEnabled="false"
+                android:visibility="gone" />
 
-                <include layout="@layout/no_data_found"/>
+            <LinearLayout
+                android:id="@+id/class6NoData"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <include layout="@layout/no_data_found" />
 
             </LinearLayout>
-
 
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:gravity="center"
                 android:text="Class 7"
-                android:gravity="center"
-                android:textSize="30sp"
                 android:textColor="@color/departmentColor"
-                android:textStyle="bold"
-                android:layout_marginTop="16dp"/>
+                android:textSize="30sp"
+                android:textStyle="bold" />
 
             <View
                 android:layout_width="match_parent"
                 android:layout_height="1dp"
                 android:layout_marginVertical="8dp"
-                android:background="#c1c1c1"/>
+                android:background="#c1c1c1" />
 
             <androidx.recyclerview.widget.RecyclerView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
                 android:id="@+id/class7"
-                android:visibility="gone"
-                android:nestedScrollingEnabled="false"/>
-
-            <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="vertical"
-                android:id="@+id/class7NoData">
-                <include layout="@layout/no_data_found"/>
+                android:nestedScrollingEnabled="false"
+                android:visibility="gone" />
+
+            <LinearLayout
+                android:id="@+id/class7NoData"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <include layout="@layout/no_data_found" />
 
 
             </LinearLayout>
@@ -102,33 +101,33 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:gravity="center"
                 android:text="Class 8"
-                android:gravity="center"
-                android:textSize="30sp"
                 android:textColor="@color/departmentColor"
-                android:textStyle="bold"
-                android:layout_marginTop="16dp"/>
+                android:textSize="30sp"
+                android:textStyle="bold" />
 
             <View
                 android:layout_width="match_parent"
                 android:layout_height="1dp"
                 android:layout_marginVertical="8dp"
-                android:background="#c1c1c1"/>
+                android:background="#c1c1c1" />
 
             <androidx.recyclerview.widget.RecyclerView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
                 android:id="@+id/class8"
-                android:visibility="gone"
-                android:nestedScrollingEnabled="false"/>
-
-            <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="vertical"
-                android:id="@+id/class8NoData">
+                android:nestedScrollingEnabled="false"
+                android:visibility="gone" />
 
-                <include layout="@layout/no_data_found"/>
+            <LinearLayout
+                android:id="@+id/class8NoData"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <include layout="@layout/no_data_found" />
 
 
             </LinearLayout>
@@ -137,33 +136,33 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:gravity="center"
                 android:text="Class 9"
-                android:gravity="center"
-                android:textSize="30sp"
                 android:textColor="@color/departmentColor"
-                android:textStyle="bold"
-                android:layout_marginTop="16dp"/>
+                android:textSize="30sp"
+                android:textStyle="bold" />
 
             <View
                 android:layout_width="match_parent"
                 android:layout_height="1dp"
                 android:layout_marginVertical="8dp"
-                android:background="#c1c1c1"/>
+                android:background="#c1c1c1" />
 
             <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/class9"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:id="@+id/class9"
-                android:visibility="gone"
-                android:nestedScrollingEnabled="false"/>
+                android:nestedScrollingEnabled="false"
+                android:visibility="gone" />
 
             <LinearLayout
+                android:id="@+id/class9NoData"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="vertical"
-                android:id="@+id/class9NoData">
+                android:orientation="vertical">
 
-                <include layout="@layout/no_data_found"/>
+                <include layout="@layout/no_data_found" />
 
 
             </LinearLayout>
@@ -172,34 +171,34 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Class 10"
+                android:layout_marginTop="16dp"
                 android:gravity="center"
-                android:textSize="30sp"
+                android:text="Class 10"
                 android:textColor="@color/departmentColor"
-                android:textStyle="bold"
-                android:layout_marginTop="16dp"/>
+                android:textSize="30sp"
+                android:textStyle="bold" />
 
             <View
                 android:layout_width="match_parent"
                 android:layout_height="1dp"
                 android:layout_marginVertical="8dp"
-                android:background="#c1c1c1"/>
+                android:background="#c1c1c1" />
 
             <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/class10"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:id="@+id/class10"
-                android:visibility="gone"
-                android:nestedScrollingEnabled="false"/>
+                android:nestedScrollingEnabled="false"
+                android:visibility="gone" />
 
 
             <LinearLayout
+                android:id="@+id/class10NoData"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="vertical"
-                android:id="@+id/class10NoData">
+                android:orientation="vertical">
 
-                <include layout="@layout/no_data_found"/>
+                <include layout="@layout/no_data_found" />
 
 
             </LinearLayout>

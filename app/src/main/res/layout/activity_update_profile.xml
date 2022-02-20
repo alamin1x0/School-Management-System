@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -9,11 +8,11 @@
     tools:context=".otp.UpdateProfile">
 
     <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbarofupdateprofile"
         android:layout_width="match_parent"
         android:layout_height="?attr/actionBarSize"
         android:layout_marginTop="0dp"
-        android:background="#0277bd"
-        android:id="@+id/toolbarofupdateprofile">
+        android:background="#0277bd">
 
 
         <RelativeLayout
@@ -22,26 +21,26 @@
             android:gravity="center_vertical">
 
             <ImageButton
+                android:id="@+id/backbuttonofupdateprofile"
                 android:layout_width="40dp"
                 android:layout_height="40dp"
-                android:id="@+id/backbuttonofupdateprofile"
+                android:layout_centerVertical="true"
                 android:background="@android:color/transparent"
-                android:src="@drawable/ic_back"
-                android:layout_centerVertical="true">
+                android:src="@drawable/ic_back">
 
             </ImageButton>
 
             <TextView
+                android:id="@+id/myapptext"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="আপডেট প্রোফাইল"
-                android:textSize="20sp"
-                android:layout_toRightOf="@id/backbuttonofupdateprofile"
-                android:layout_marginLeft="10dp"
                 android:layout_centerVertical="true"
-                android:textStyle="bold"
-                android:id="@+id/myapptext"
-                android:textColor="@color/white">
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@id/backbuttonofupdateprofile"
+                android:text="আপডেট প্রোফাইল"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:textStyle="bold">
 
             </TextView>
 
@@ -50,25 +49,22 @@
     </androidx.appcompat.widget.Toolbar>
 
 
-
-
     <androidx.cardview.widget.CardView
+        android:id="@+id/getnewuserimage"
         android:layout_width="130dp"
         android:layout_height="130dp"
         android:layout_above="@+id/getnewusername"
-        android:layout_marginBottom="30dp"
-        android:layout_marginLeft="80dp"
-        android:id="@+id/getnewuserimage"
         android:layout_centerHorizontal="true"
-        app:cardCornerRadius="62dp"
-        >
+        android:layout_marginLeft="80dp"
+        android:layout_marginBottom="30dp"
+        app:cardCornerRadius="62dp">
 
         <ImageView
+            android:id="@+id/getnewuserimageimageView"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:src="@drawable/proo"
-            android:id="@+id/getnewuserimageimageView"
-            android:scaleType="centerCrop">
+            android:scaleType="centerCrop"
+            android:src="@drawable/proo">
 
         </ImageView>
 
@@ -76,40 +72,37 @@
     </androidx.cardview.widget.CardView>
 
 
-
     <EditText
+        android:id="@+id/getnewusername"
         android:layout_width="match_parent"
         android:layout_height="50dp"
-        android:inputType="textCapWords"
-        android:hint="এখানে আপনার নতুন নাম লিখুন"
         android:layout_centerInParent="true"
-        android:id="@+id/getnewusername"
         android:layout_centerHorizontal="true"
         android:layout_marginLeft="90dp"
-        android:layout_marginRight="90dp">
-    </EditText>
+        android:layout_marginRight="90dp"
+        android:hint="এখানে আপনার নতুন নাম লিখুন"
+        android:inputType="textCapWords"></EditText>
 
     <android.widget.Button
+        android:id="@+id/updateprofilebutton"
         android:layout_width="150dp"
         android:layout_height="50dp"
-        android:layout_centerHorizontal="true"
         android:layout_below="@id/getnewusername"
-        android:id="@+id/updateprofilebutton"
+        android:layout_centerHorizontal="true"
         android:layout_marginTop="30dp"
         android:background="@color/titelcolorbd"
         android:text="আপডেট প্রোফাইল"
-        android:textColor="@color/white">
-    </android.widget.Button>
+        android:textColor="@color/white"></android.widget.Button>
 
 
     <ProgressBar
+        android:id="@+id/progressbarofupdateprofile"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_centerHorizontal="true"
-        android:visibility="invisible"
-        android:layout_marginTop="40dp"
         android:layout_below="@+id/updateprofilebutton"
-        android:id="@+id/progressbarofupdateprofile">
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:visibility="invisible">
 
     </ProgressBar>
 

@@ -7,24 +7,24 @@
     tools:context=".ebook.EbookActivity">
 
     <EditText
+        android:id="@+id/searchText"
         android:layout_width="match_parent"
         android:layout_height="50dp"
-        android:id="@+id/searchText"
-        android:hint="Search here"
-        android:drawableLeft="@drawable/ic_search"
-        android:layout_marginTop="10dp"
-        android:padding="8dp"
         android:layout_marginLeft="4dp"
+        android:layout_marginTop="10dp"
         android:layout_marginRight="4dp"
+        android:background="@drawable/search_background"
+        android:drawableLeft="@drawable/ic_search"
         android:drawablePadding="6dp"
-        android:visibility="gone"
-        android:background="@drawable/search_background"/>
+        android:hint="Search here"
+        android:padding="8dp"
+        android:visibility="gone" />
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/ebookRecyler"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_below="@+id/searchText"/>
+        android:layout_below="@+id/searchText" />
 
 
     <com.facebook.shimmer.ShimmerFrameLayout
@@ -42,85 +42,151 @@
             android:layout_height="wrap_content"
             android:orientation="vertical">
 
-            <include layout="@layout/shammer_for_ebook"/>
-            <include layout="@layout/shammer_for_ebook"/>
-            <include layout="@layout/shammer_for_ebook"/>
-            <include layout="@layout/shammer_for_ebook"/>
-            <include layout="@layout/shammer_for_ebook"/>
-            <include layout="@layout/shammer_for_ebook"/>
-            <include layout="@layout/shammer_for_ebook"/>
-            <include layout="@layout/shammer_for_ebook"/>
-            <include layout="@layout/shammer_for_ebook"/>
-            <include layout="@layout/shammer_for_ebook"/>
-            <include layout="@layout/shammer_for_ebook"/>
-            <include layout="@layout/shammer_for_ebook"/>
-            <include layout="@layout/shammer_for_ebook"/>
-            <include layout="@layout/shammer_for_ebook"/>
-            <include layout="@layout/shammer_for_ebook"/>
-            <include layout="@layout/shammer_for_ebook"/>
-            <include layout="@layout/shammer_for_ebook"/>
-            <include layout="@layout/shammer_for_ebook"/>
-            <include layout="@layout/shammer_for_ebook"/>
-            <include layout="@layout/shammer_for_ebook"/>
-            <include layout="@layout/shammer_for_ebook"/>
-            <include layout="@layout/shammer_for_ebook"/>
-            <include layout="@layout/shammer_for_ebook"/>
-            <include layout="@layout/shammer_for_ebook"/>
-            <include layout="@layout/shammer_for_ebook"/>
-            <include layout="@layout/shammer_for_ebook"/>
-            <include layout="@layout/shammer_for_ebook"/>
-            <include layout="@layout/shammer_for_ebook"/>
-            <include layout="@layout/shammer_for_ebook"/>
-            <include layout="@layout/shammer_for_ebook"/>
-            <include layout="@layout/shammer_for_ebook"/>
-            <include layout="@layout/shammer_for_ebook"/>
-            <include layout="@layout/shammer_for_ebook"/>
-            <include layout="@layout/shammer_for_ebook"/>
-            <include layout="@layout/shammer_for_ebook"/>
-            <include layout="@layout/shammer_for_ebook"/>
-            <include layout="@layout/shammer_for_ebook"/>
-            <include layout="@layout/shammer_for_ebook"/>
-            <include layout="@layout/shammer_for_ebook"/>
-            <include layout="@layout/shammer_for_ebook"/>
-            <include layout="@layout/shammer_for_ebook"/>
-            <include layout="@layout/shammer_for_ebook"/>
-            <include layout="@layout/shammer_for_ebook"/>
-            <include layout="@layout/shammer_for_ebook"/>
-            <include layout="@layout/shammer_for_ebook"/>
-            <include layout="@layout/shammer_for_ebook"/>
-            <include layout="@layout/shammer_for_ebook"/>
-            <include layout="@layout/shammer_for_ebook"/>
-            <include layout="@layout/shammer_for_ebook"/>
-            <include layout="@layout/shammer_for_ebook"/>
-            <include layout="@layout/shammer_for_ebook"/>
-            <include layout="@layout/shammer_for_ebook"/>
-            <include layout="@layout/shammer_for_ebook"/>
-            <include layout="@layout/shammer_for_ebook"/>
-            <include layout="@layout/shammer_for_ebook"/>
-            <include layout="@layout/shammer_for_ebook"/>
-            <include layout="@layout/shammer_for_ebook"/>
-            <include layout="@layout/shammer_for_ebook"/>
-            <include layout="@layout/shammer_for_ebook"/>
-            <include layout="@layout/shammer_for_ebook"/>
-            <include layout="@layout/shammer_for_ebook"/>
-            <include layout="@layout/shammer_for_ebook"/>
-            <include layout="@layout/shammer_for_ebook"/>
-            <include layout="@layout/shammer_for_ebook"/>
-            <include layout="@layout/shammer_for_ebook"/>
-            <include layout="@layout/shammer_for_ebook"/>
-            <include layout="@layout/shammer_for_ebook"/>
-            <include layout="@layout/shammer_for_ebook"/>
-            <include layout="@layout/shammer_for_ebook"/>
-            <include layout="@layout/shammer_for_ebook"/>
+            <include layout="@layout/shammer_for_ebook" />
+
+            <include layout="@layout/shammer_for_ebook" />
+
+            <include layout="@layout/shammer_for_ebook" />
+
+            <include layout="@layout/shammer_for_ebook" />
+
+            <include layout="@layout/shammer_for_ebook" />
+
+            <include layout="@layout/shammer_for_ebook" />
+
+            <include layout="@layout/shammer_for_ebook" />
+
+            <include layout="@layout/shammer_for_ebook" />
+
+            <include layout="@layout/shammer_for_ebook" />
+
+            <include layout="@layout/shammer_for_ebook" />
+
+            <include layout="@layout/shammer_for_ebook" />
+
+            <include layout="@layout/shammer_for_ebook" />
+
+            <include layout="@layout/shammer_for_ebook" />
+
+            <include layout="@layout/shammer_for_ebook" />
+
+            <include layout="@layout/shammer_for_ebook" />
+
+            <include layout="@layout/shammer_for_ebook" />
+
+            <include layout="@layout/shammer_for_ebook" />
+
+            <include layout="@layout/shammer_for_ebook" />
+
+            <include layout="@layout/shammer_for_ebook" />
+
+            <include layout="@layout/shammer_for_ebook" />
+
+            <include layout="@layout/shammer_for_ebook" />
+
+            <include layout="@layout/shammer_for_ebook" />
+
+            <include layout="@layout/shammer_for_ebook" />
+
+            <include layout="@layout/shammer_for_ebook" />
+
+            <include layout="@layout/shammer_for_ebook" />
+
+            <include layout="@layout/shammer_for_ebook" />
+
+            <include layout="@layout/shammer_for_ebook" />
+
+            <include layout="@layout/shammer_for_ebook" />
+
+            <include layout="@layout/shammer_for_ebook" />
+
+            <include layout="@layout/shammer_for_ebook" />
+
+            <include layout="@layout/shammer_for_ebook" />
+
+            <include layout="@layout/shammer_for_ebook" />
+
+            <include layout="@layout/shammer_for_ebook" />
+
+            <include layout="@layout/shammer_for_ebook" />
+
+            <include layout="@layout/shammer_for_ebook" />
+
+            <include layout="@layout/shammer_for_ebook" />
+
+            <include layout="@layout/shammer_for_ebook" />
+
+            <include layout="@layout/shammer_for_ebook" />
+
+            <include layout="@layout/shammer_for_ebook" />
+
+            <include layout="@layout/shammer_for_ebook" />
+
+            <include layout="@layout/shammer_for_ebook" />
+
+            <include layout="@layout/shammer_for_ebook" />
+
+            <include layout="@layout/shammer_for_ebook" />
+
+            <include layout="@layout/shammer_for_ebook" />
+
+            <include layout="@layout/shammer_for_ebook" />
+
+            <include layout="@layout/shammer_for_ebook" />
+
+            <include layout="@layout/shammer_for_ebook" />
+
+            <include layout="@layout/shammer_for_ebook" />
+
+            <include layout="@layout/shammer_for_ebook" />
+
+            <include layout="@layout/shammer_for_ebook" />
+
+            <include layout="@layout/shammer_for_ebook" />
+
+            <include layout="@layout/shammer_for_ebook" />
+
+            <include layout="@layout/shammer_for_ebook" />
+
+            <include layout="@layout/shammer_for_ebook" />
+
+            <include layout="@layout/shammer_for_ebook" />
+
+            <include layout="@layout/shammer_for_ebook" />
+
+            <include layout="@layout/shammer_for_ebook" />
+
+            <include layout="@layout/shammer_for_ebook" />
+
+            <include layout="@layout/shammer_for_ebook" />
+
+            <include layout="@layout/shammer_for_ebook" />
+
+            <include layout="@layout/shammer_for_ebook" />
+
+            <include layout="@layout/shammer_for_ebook" />
+
+            <include layout="@layout/shammer_for_ebook" />
+
+            <include layout="@layout/shammer_for_ebook" />
+
+            <include layout="@layout/shammer_for_ebook" />
+
+            <include layout="@layout/shammer_for_ebook" />
+
+            <include layout="@layout/shammer_for_ebook" />
+
+            <include layout="@layout/shammer_for_ebook" />
+
+            <include layout="@layout/shammer_for_ebook" />
+
+            <include layout="@layout/shammer_for_ebook" />
 
 
         </LinearLayout>
 
 
-
     </com.facebook.shimmer.ShimmerFrameLayout>
-
-
 
 
 </RelativeLayout>

@@ -1,24 +1,22 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context=".ui.gallery.GalleryFragment">
 
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:padding="@dimen/text_margin"
-        android:orientation="vertical">
-
+        android:orientation="vertical"
+        android:padding="@dimen/text_margin">
 
         <com.google.android.material.card.MaterialCardView
             android:layout_width="match_parent"
-            android:layout_marginVertical="8dp"
-            android:layout_height="280dp">
-
+            android:layout_height="280dp"
+            android:layout_marginVertical="8dp">
 
 
             <LinearLayout
@@ -27,30 +25,29 @@
                 android:orientation="vertical">
 
                 <TextView
-                    android:layout_width="wrap_content"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="@dimen/text_margin"
+                    android:background="@drawable/alltitile_bg"
+                    android:gravity="center"
                     android:text="সমাবর্তন"
-                    android:layout_marginTop="@dimen/text_margin"
-                    android:textSize="22sp"
-                    android:background="@color/titelcolorbd"
-                    android:layout_gravity="center_horizontal"
                     android:textColor="@color/white"
-                   />
+                    android:textSize="22sp" />
 
                 <View
                     android:layout_width="wrap_content"
                     android:layout_height="1dp"
                     android:layout_marginVertical="4dp"
-                    android:background="@color/grey"/>
+                    android:background="@color/grey" />
 
                 <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/convonRecycler"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:id="@+id/convonRecycler"/>
+                    android:layout_height="wrap_content" />
 
 
             </LinearLayout>
-
 
 
         </com.google.android.material.card.MaterialCardView>
@@ -58,8 +55,8 @@
 
         <com.google.android.material.card.MaterialCardView
             android:layout_width="match_parent"
-            android:layout_marginVertical="8dp"
-            android:layout_height="280dp">
+            android:layout_height="280dp"
+            android:layout_marginVertical="8dp">
 
 
             <LinearLayout
@@ -68,30 +65,29 @@
                 android:orientation="vertical">
 
                 <TextView
-                    android:layout_width="wrap_content"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="@dimen/text_margin"
+                    android:background="@drawable/alltitile_bg"
+                    android:gravity="center"
                     android:text="স্বাধীনতা দিবস"
-                    android:layout_marginTop="@dimen/text_margin"
-                    android:textSize="22sp"
-                    android:background="@color/titelcolorbd"
-                    android:layout_gravity="center_horizontal"
                     android:textColor="@color/white"
-                    />
+                    android:textSize="22sp" />
 
                 <View
                     android:layout_width="wrap_content"
                     android:layout_height="1dp"
                     android:layout_marginVertical="4dp"
-                    android:background="@color/grey"/>
+                    android:background="@color/grey" />
 
                 <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/indaypendenceRecycler"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:id="@+id/indaypendenceRecycler"/>
+                    android:layout_height="wrap_content" />
 
 
             </LinearLayout>
-
 
 
         </com.google.android.material.card.MaterialCardView>
@@ -99,8 +95,8 @@
 
         <com.google.android.material.card.MaterialCardView
             android:layout_width="match_parent"
-            android:layout_marginVertical="8dp"
-            android:layout_height="280dp">
+            android:layout_height="280dp"
+            android:layout_marginVertical="8dp">
 
 
             <LinearLayout
@@ -109,26 +105,26 @@
                 android:orientation="vertical">
 
                 <TextView
-                    android:layout_width="wrap_content"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="অন্যান্য"
-                    android:layout_marginTop="@dimen/text_margin"
-                    android:textSize="22sp"
-                    android:background="@color/titelcolorbd"
                     android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="@dimen/text_margin"
+                    android:background="@drawable/alltitile_bg"
+                    android:gravity="center"
+                    android:text="অন্যান্য"
                     android:textColor="@color/white"
-                    />
+                    android:textSize="22sp" />
 
                 <View
                     android:layout_width="wrap_content"
                     android:layout_height="1dp"
                     android:layout_marginVertical="4dp"
-                    android:background="@color/grey"/>
+                    android:background="@color/grey" />
 
                 <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/otherRecycler"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:id="@+id/otherRecycler"/>
+                    android:layout_height="wrap_content" />
 
 
             </LinearLayout>
@@ -137,9 +133,6 @@
 
 
     </LinearLayout>
-
-
-
 
 
 </androidx.core.widget.NestedScrollView>

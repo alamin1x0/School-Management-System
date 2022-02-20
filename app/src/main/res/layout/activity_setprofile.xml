@@ -11,35 +11,34 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textSize="20sp"
-        android:text="আপনার প্রোফাইল সংরক্ষণ করুন"
         android:layout_above="@+id/getuserimage"
+        android:layout_centerHorizontal="true"
         android:layout_marginBottom="30dp"
+        android:text="আপনার প্রোফাইল সংরক্ষণ করুন"
         android:textColor="@color/titelcolorbd"
-        android:textStyle="bold"
-        android:layout_centerHorizontal="true">
+        android:textSize="20sp"
+        android:textStyle="bold">
 
     </TextView>
 
 
-
     <androidx.cardview.widget.CardView
+        android:id="@+id/getuserimage"
         android:layout_width="130dp"
         android:layout_height="130dp"
         android:layout_above="@+id/getusername"
-        android:layout_marginBottom="20dp"
-        android:layout_marginLeft="80dp"
-        android:id="@+id/getuserimage"
         android:layout_centerHorizontal="true"
-        app:cardCornerRadius="40dp"
-        android:layout_marginStart="80dp">
+        android:layout_marginStart="80dp"
+        android:layout_marginLeft="80dp"
+        android:layout_marginBottom="20dp"
+        app:cardCornerRadius="40dp">
 
         <ImageView
+            android:id="@+id/getuserimageimageView"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:src="@drawable/proo"
-            android:id="@+id/getuserimageimageView"
-            android:scaleType="centerCrop">
+            android:scaleType="centerCrop"
+            android:src="@drawable/proo">
 
         </ImageView>
 
@@ -48,45 +47,42 @@
 
 
     <EditText
+        android:id="@+id/getusername"
         android:layout_width="match_parent"
         android:layout_height="50dp"
-        android:inputType="textCapWords"
-        android:hint="এখানে আপনার নাম লিখুন"
         android:layout_centerInParent="true"
-        android:id="@+id/getusername"
         android:layout_marginLeft="70dp"
-        android:layout_marginRight="70dp">
+        android:layout_marginRight="70dp"
+        android:hint="এখানে আপনার নাম লিখুন"
+        android:inputType="textCapWords">
 
     </EditText>
 
 
-
     <android.widget.Button
+        android:id="@+id/saveProfile"
         android:layout_width="150dp"
         android:layout_height="50dp"
         android:layout_below="@id/getusername"
-        android:id="@+id/saveProfile"
         android:layout_centerHorizontal="true"
-        android:textColor="@color/white"
-        android:text="প্রোফাইল সংরক্ষণ"
         android:layout_marginTop="50dp"
-        android:background="@color/titelcolorbd">
+        android:background="@color/titelcolorbd"
+        android:text="প্রোফাইল সংরক্ষণ"
+        android:textColor="@color/white">
 
     </android.widget.Button>
 
 
     <ProgressBar
+        android:id="@+id/progressBarSaveProfile"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_centerHorizontal="true"
         android:layout_below="@id/saveProfile"
-        android:id="@+id/progressBarSaveProfile"
-        android:visibility="invisible"
-        android:layout_marginTop="30dp">
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:visibility="invisible">
 
     </ProgressBar>
-
-
 
 
 </RelativeLayout>

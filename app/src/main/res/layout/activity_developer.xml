@@ -4,17 +4,21 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:layout_margin="15dp"
     android:gravity="center"
-    android:layout_margin="20dp"
     android:orientation="vertical"
     tools:context=".developer.developer">
 
+
     <de.hdodenhof.circleimageview.CircleImageView
-        android:layout_width="match_parent"
+        android:id="@+id/profiel_image"
+        android:layout_width="150dp"
         android:layout_height="150dp"
-        android:src="@drawable/sakiblogo"
         android:layout_gravity="center_horizontal"
         android:layout_weight="0.5"
+        android:src="@drawable/sakiblogo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         tools:ignore="MissingConstraints" />
 
 
@@ -24,9 +28,10 @@
         android:autoLink="all"
         android:text="@string/autolink_text"
         android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:textColor="@color/titelcolorbd"
+        app:layout_constraintVertical_bias="0.5"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        android:textColor="@color/titelcolorbd"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 

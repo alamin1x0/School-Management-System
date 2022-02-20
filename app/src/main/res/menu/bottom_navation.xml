@@ -21,10 +21,10 @@
         android:icon="@drawable/image"
         android:title="গ্যালারী" />
 
-    <item
-        android:id="@+id/navigation_quiz"
-        android:icon="@drawable/ic_quiz"
-        android:title="কুইজ" />
+    <!--    <item-->
+    <!--        android:id="@+id/navigation_quiz"-->
+    <!--        android:icon="@drawable/ic_quiz"-->
+    <!--        android:title="কুইজ" />-->
 
 
     <!--    <item android:id="@+id/navigation_about"-->

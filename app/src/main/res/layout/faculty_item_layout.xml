@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<com.google.android.material.card.MaterialCardView
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:layout_margin="5dp">
@@ -20,47 +19,47 @@
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1.5"
+                android:gravity="center_vertical"
                 android:orientation="vertical"
-                android:paddingLeft="12dp"
-                android:gravity="center_vertical">
+                android:paddingLeft="12dp">
 
                 <TextView
+                    android:id="@+id/teacherName"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:id="@+id/teacherName"
                     android:text="আল-আমিন"
                     android:textColor="@color/textColor"
-                    android:textSize="@dimen/text_size"
-                    android:textIsSelectable="true"/>
-
-
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:id="@+id/teacherPhone"
-                    android:textAllCaps="true"
-                    android:text="০১৭৬২৮৬৮৮৬৪"
                     android:textIsSelectable="true"
-                    android:textColor="@color/textColor"
-                    android:textSize="@dimen/text_size"/>
+                    android:textSize="@dimen/text_size" />
 
 
                 <TextView
+                    android:id="@+id/teacherPhone"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:text="০১৭৬২৮৬৮৮৬৪"
+                    android:textAllCaps="true"
+                    android:textColor="@color/textColor"
+                    android:textIsSelectable="true"
+                    android:textSize="@dimen/text_size" />
+
+
+                <TextView
                     android:id="@+id/teacherPost"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
                     android:text="পদবি"
                     android:textColor="@color/textColor"
                     android:textIsSelectable="true"
-                    android:textSize="@dimen/text_size"/>
+                    android:textSize="@dimen/text_size" />
 
                 <TextView
+                    android:id="@+id/teacherJon"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:id="@+id/teacherJon"
                     android:text="জয়েন ডেট"
                     android:textColor="@color/textColor"
-                    android:textSize="18sp"/>
+                    android:textSize="18sp" />
 
             </LinearLayout>
 
@@ -68,9 +67,9 @@
                 android:id="@+id/teacherImage"
                 android:layout_width="80dp"
                 android:layout_height="80dp"
-                android:src="@drawable/pro"
                 android:layout_gravity="center_horizontal"
-                android:layout_weight="0.5"/>
+                android:layout_weight="0.5"
+                android:src="@drawable/pro" />
 
         </LinearLayout>
 

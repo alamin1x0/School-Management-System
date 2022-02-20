@@ -43,9 +43,8 @@ public class StudentList extends AppCompatActivity {
         setContentView(R.layout.activity_student_list);
 
 
-        
         //getSupportActionBar().setDisplayHomeAsUpEnabled(true);
-        getSupportActionBar().setTitle("Student List");
+        getSupportActionBar().setTitle("Students List");
         class6 = findViewById(R.id.class6);
         class7 = findViewById(R.id.class7);
         class8 = findViewById(R.id.class8);
@@ -76,15 +75,15 @@ public class StudentList extends AppCompatActivity {
             @Override
             public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
                 list = new ArrayList<>();
-                if (!dataSnapshot.exists()){
+                if (!dataSnapshot.exists()) {
                     class6NoData.setVisibility(View.VISIBLE);
                     class6.setVisibility(View.GONE);
-                }else {
+                } else {
 
 
                     class6NoData.setVisibility(View.GONE);
                     class6.setVisibility(View.VISIBLE);
-                    for (DataSnapshot snapshot: dataSnapshot.getChildren()){
+                    for (DataSnapshot snapshot : dataSnapshot.getChildren()) {
                         StudentListData data = snapshot.getValue(StudentListData.class);
                         list.add(data);
                     }
@@ -139,15 +138,15 @@ public class StudentList extends AppCompatActivity {
             @Override
             public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
                 list1 = new ArrayList<>();
-                if (!dataSnapshot.exists()){
+                if (!dataSnapshot.exists()) {
                     class7NoData.setVisibility(View.VISIBLE);
                     class7.setVisibility(View.GONE);
-                }else {
+                } else {
 
 
                     class7NoData.setVisibility(View.GONE);
                     class7.setVisibility(View.VISIBLE);
-                    for (DataSnapshot snapshot: dataSnapshot.getChildren()){
+                    for (DataSnapshot snapshot : dataSnapshot.getChildren()) {
                         StudentListData data = snapshot.getValue(StudentListData.class);
                         list1.add(data);
                     }
@@ -174,15 +173,15 @@ public class StudentList extends AppCompatActivity {
             @Override
             public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
                 list2 = new ArrayList<>();
-                if (!dataSnapshot.exists()){
+                if (!dataSnapshot.exists()) {
                     class8NoData.setVisibility(View.VISIBLE);
                     class8.setVisibility(View.GONE);
-                }else {
+                } else {
 
 
                     class8NoData.setVisibility(View.GONE);
                     class8.setVisibility(View.VISIBLE);
-                    for (DataSnapshot snapshot: dataSnapshot.getChildren()){
+                    for (DataSnapshot snapshot : dataSnapshot.getChildren()) {
                         StudentListData data = snapshot.getValue(StudentListData.class);
                         list2.add(data);
                     }
@@ -209,13 +208,13 @@ public class StudentList extends AppCompatActivity {
             @Override
             public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
                 list3 = new ArrayList<>();
-                if (!dataSnapshot.exists()){
+                if (!dataSnapshot.exists()) {
                     class9NoData.setVisibility(View.VISIBLE);
                     class9.setVisibility(View.GONE);
-                }else {
+                } else {
                     class9NoData.setVisibility(View.GONE);
                     class9.setVisibility(View.VISIBLE);
-                    for (DataSnapshot snapshot: dataSnapshot.getChildren()){
+                    for (DataSnapshot snapshot : dataSnapshot.getChildren()) {
                         StudentListData data = snapshot.getValue(StudentListData.class);
                         list3.add(data);
                     }
@@ -242,13 +241,13 @@ public class StudentList extends AppCompatActivity {
             @Override
             public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
                 list4 = new ArrayList<>();
-                if (!dataSnapshot.exists()){
+                if (!dataSnapshot.exists()) {
                     class10NoData.setVisibility(View.VISIBLE);
                     class10.setVisibility(View.GONE);
-                }else {
+                } else {
                     class10NoData.setVisibility(View.GONE);
                     class10.setVisibility(View.VISIBLE);
-                    for (DataSnapshot snapshot: dataSnapshot.getChildren()){
+                    for (DataSnapshot snapshot : dataSnapshot.getChildren()) {
                         StudentListData data = snapshot.getValue(StudentListData.class);
                         list4.add(data);
                     }

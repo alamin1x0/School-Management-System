@@ -4,21 +4,23 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:focusableInTouchMode="true"
     tools:context=".admission.AdmissionActivity">
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:padding="16dp"
-        android:orientation="vertical">
+        android:focusableInTouchMode="true"
+        android:orientation="vertical"
+        android:padding="16dp">
 
         <de.hdodenhof.circleimageview.CircleImageView
             android:id="@+id/addStudentImage"
             android:layout_width="120dp"
             android:layout_height="120dp"
-            android:src="@drawable/pro"
             android:layout_gravity="center"
-            android:layout_marginTop="36dp"/>
+            android:layout_marginTop="36dp"
+            android:src="@drawable/pro" />
 
 
         <com.google.android.material.textfield.TextInputLayout
@@ -32,7 +34,9 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:hint="শিক্ষার্থীর নাম (বাংলা)"
-                android:inputType="text"/>
+                android:imeOptions="actionNext"
+                android:importantForAutofill="no"
+                android:inputType="text" />
         </com.google.android.material.textfield.TextInputLayout>
 
         <com.google.android.material.textfield.TextInputLayout
@@ -46,7 +50,9 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:hint="শিক্ষার্থীর নাম (ইংরেজি)"
-                android:inputType="text"/>
+                android:imeOptions="actionNext"
+                android:importantForAutofill="no"
+                android:inputType="text" />
         </com.google.android.material.textfield.TextInputLayout>
 
 
@@ -61,9 +67,11 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:hint="জন্ম সনদের নাম্বার"
-                android:inputType="text"/>
+                android:imeOptions="actionNext"
+                android:importantForAutofill="no"
+                android:inputType="number"
+                android:maxLength="17" />
         </com.google.android.material.textfield.TextInputLayout>
-
 
 
         <com.google.android.material.textfield.TextInputLayout
@@ -77,23 +85,20 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:hint="জন্ম তারিখ"
-                android:inputType="text"/>
+                android:imeOptions="actionNext"
+                android:importantForAutofill="no"
+                android:inputType="text" />
         </com.google.android.material.textfield.TextInputLayout>
 
 
-        <com.google.android.material.textfield.TextInputLayout
-            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        <Spinner
+            android:id="@+id/addAllGendercategory"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_marginTop="16dp">
-
-            <com.google.android.material.textfield.TextInputEditText
-                android:id="@+id/studentGender"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:hint="লিঙ্গ"
-                android:inputType="text"/>
-        </com.google.android.material.textfield.TextInputLayout>
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="16dp"
+            android:background="@android:drawable/btn_dropdown"
+            android:gravity="center"
+            android:spinnerMode="dropdown" />
 
 
         <com.google.android.material.textfield.TextInputLayout
@@ -107,7 +112,9 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:hint="পিতার নাম (বাংলা)"
-                android:inputType="text"/>
+                android:imeOptions="actionNext"
+                android:importantForAutofill="no"
+                android:inputType="text" />
         </com.google.android.material.textfield.TextInputLayout>
 
 
@@ -122,7 +129,9 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:hint="পিতার নাম (ইংরেজি)"
-                android:inputType="text"/>
+                android:imeOptions="actionNext"
+                android:importantForAutofill="no"
+                android:inputType="text" />
         </com.google.android.material.textfield.TextInputLayout>
 
 
@@ -137,9 +146,11 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:hint="পিতার এন আই ডি"
-                android:inputType="number"/>
+                android:imeOptions="actionNext"
+                android:importantForAutofill="no"
+                android:inputType="number"
+                android:maxEms="17" />
         </com.google.android.material.textfield.TextInputLayout>
-
 
 
         <com.google.android.material.textfield.TextInputLayout
@@ -153,10 +164,10 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:hint="পিতার জন্ম তারিখ"
-                android:inputType="text"/>
+                android:imeOptions="actionNext"
+                android:importantForAutofill="no"
+                android:inputType="text" />
         </com.google.android.material.textfield.TextInputLayout>
-
-
 
 
         <com.google.android.material.textfield.TextInputLayout
@@ -170,9 +181,10 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:hint="পিতার মোবাইল নম্বর"
-                android:inputType="number"/>
+                android:imeOptions="actionNext"
+                android:importantForAutofill="no"
+                android:inputType="number" />
         </com.google.android.material.textfield.TextInputLayout>
-
 
 
         <com.google.android.material.textfield.TextInputLayout
@@ -186,7 +198,9 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:hint="মাতার নাম (বাংলা)"
-                android:inputType="text"/>
+                android:imeOptions="actionNext"
+                android:importantForAutofill="no"
+                android:inputType="text" />
         </com.google.android.material.textfield.TextInputLayout>
 
 
@@ -201,10 +215,10 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:hint="মাতার নাম (ইংরেজি)"
-                android:inputType="text"/>
+                android:imeOptions="actionNext"
+                android:importantForAutofill="no"
+                android:inputType="text" />
         </com.google.android.material.textfield.TextInputLayout>
-
-
 
 
         <com.google.android.material.textfield.TextInputLayout
@@ -218,10 +232,10 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:hint="মাতার এন আই ডি"
-                android:inputType="number"/>
+                android:imeOptions="actionNext"
+                android:importantForAutofill="no"
+                android:inputType="number" />
         </com.google.android.material.textfield.TextInputLayout>
-
-
 
 
         <com.google.android.material.textfield.TextInputLayout
@@ -235,30 +249,19 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:hint="মাতার জন্ম তারিখ"
-                android:inputType="text"/>
+                android:imeOptions="actionNext"
+                android:importantForAutofill="no"
+                android:inputType="text" />
         </com.google.android.material.textfield.TextInputLayout>
 
-
-
-
-
-        <com.google.android.material.textfield.TextInputLayout
-            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        <Spinner
+            android:id="@+id/addAllDivisionCategory"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_marginTop="16dp">
-
-            <com.google.android.material.textfield.TextInputEditText
-                android:id="@+id/Division"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:hint="বিভাগ"
-                android:inputType="text"/>
-        </com.google.android.material.textfield.TextInputLayout>
-
-
-
-
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="16dp"
+            android:background="@android:drawable/btn_dropdown"
+            android:gravity="center"
+            android:spinnerMode="dropdown" />
 
         <com.google.android.material.textfield.TextInputLayout
             style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
@@ -271,10 +274,10 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:hint="জেলা"
-                android:inputType="text"/>
+                android:imeOptions="actionNext"
+                android:importantForAutofill="no"
+                android:inputType="text" />
         </com.google.android.material.textfield.TextInputLayout>
-
-
 
 
         <com.google.android.material.textfield.TextInputLayout
@@ -288,7 +291,9 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:hint="উপজেলা"
-                android:inputType="text"/>
+                android:imeOptions="actionNext"
+                android:importantForAutofill="no"
+                android:inputType="text" />
         </com.google.android.material.textfield.TextInputLayout>
 
 
@@ -303,7 +308,9 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:hint="পোস্ট কোড"
-                android:inputType="number"/>
+                android:imeOptions="actionNext"
+                android:importantForAutofill="no"
+                android:inputType="number" />
         </com.google.android.material.textfield.TextInputLayout>
 
 
@@ -318,9 +325,10 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:hint="ঠিকানা / গ্রাম"
-                android:inputType="text"/>
+                android:imeOptions="actionNext"
+                android:importantForAutofill="no"
+                android:inputType="text" />
         </com.google.android.material.textfield.TextInputLayout>
-
 
 
         <com.google.android.material.textfield.TextInputLayout
@@ -334,10 +342,10 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:hint="পূর্ববর্তী প্রতিষ্ঠানের নাম"
-                android:inputType="text"/>
+                android:imeOptions="actionNext"
+                android:importantForAutofill="no"
+                android:inputType="text" />
         </com.google.android.material.textfield.TextInputLayout>
-
-
 
 
         <com.google.android.material.textfield.TextInputLayout
@@ -351,9 +359,10 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:hint="পূর্ববর্তী পরীক্ষার নাম"
-                android:inputType="text"/>
+                android:imeOptions="actionNext"
+                android:importantForAutofill="no"
+                android:inputType="text" />
         </com.google.android.material.textfield.TextInputLayout>
-
 
 
         <com.google.android.material.textfield.TextInputLayout
@@ -367,9 +376,10 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:hint="উর্ত্তীন হওয়ার বছর"
-                android:inputType="numberDecimal"/>
+                android:imeOptions="actionNext"
+                android:importantForAutofill="no"
+                android:inputType="numberDecimal" />
         </com.google.android.material.textfield.TextInputLayout>
-
 
 
         <com.google.android.material.textfield.TextInputLayout
@@ -383,9 +393,10 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:hint="বোর্ড"
-                android:inputType="text"/>
+                android:imeOptions="actionNext"
+                android:importantForAutofill="no"
+                android:inputType="text" />
         </com.google.android.material.textfield.TextInputLayout>
-
 
 
         <com.google.android.material.textfield.TextInputLayout
@@ -399,10 +410,10 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:hint="রোল"
-                android:inputType="numberDecimal"/>
+                android:imeOptions="actionNext"
+                android:importantForAutofill="no"
+                android:inputType="numberDecimal" />
         </com.google.android.material.textfield.TextInputLayout>
-
-
 
 
         <com.google.android.material.textfield.TextInputLayout
@@ -416,9 +427,10 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:hint="ফলাফল (জিপিএ)"
-                android:inputType="numberDecimal"/>
+                android:imeOptions="actionNext"
+                android:importantForAutofill="no"
+                android:inputType="numberDecimal" />
         </com.google.android.material.textfield.TextInputLayout>
-
 
 
         <com.google.android.material.textfield.TextInputLayout
@@ -432,37 +444,38 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:hint="উপস্থিতির হার "
-                android:inputType="numberDecimal"/>
+                android:imeOptions="actionDone"
+                android:importantForAutofill="no"
+                android:inputType="numberDecimal" />
         </com.google.android.material.textfield.TextInputLayout>
-
-
 
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:padding="10dp"
-            android:textSize="15sp"
+            android:text="এ মর্মে অঙ্গীকার করছি যে, প্রদত্ত তথ্য সঠিক। কোন তথ্য মিথ্যা প্রমাণিত হলে কর্তৃপক্ষের যে কোন সিদ্ধান্ত মেনে নিতে হবে।"
             android:textColor="@color/red"
-            android:text="এ মর্মে অঙ্গীকার করছি যে, প্রদত্ত তথ্য সঠিক। কোন তথ্য মিথ্যা প্রমাণিত হলে কর্তৃপক্ষের যে কোন সিদ্ধান্ত মেনে নিতে হবে।"/>
+            android:textSize="15sp" />
 
         <Spinner
-
+            android:id="@+id/addAdmissionCategory"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:id="@+id/addAdmissionCategory"
-            android:spinnerMode="dropdown"
+            android:layout_marginVertical="16dp"
             android:background="@android:drawable/btn_dropdown"
             android:gravity="center"
-            android:layout_marginVertical="16dp"/>
+            android:spinnerMode="dropdown" />
 
         <com.google.android.material.button.MaterialButton
             android:id="@+id/addAdmissionBtn"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/bannder_bg"
             android:text="ভর্তি সংযোগ কর"
-            android:layout_marginTop="16dp"
-            android:textAllCaps="false"/>
+            android:textAllCaps="false"
+            android:textSize="20sp" />
 
 
     </LinearLayout>

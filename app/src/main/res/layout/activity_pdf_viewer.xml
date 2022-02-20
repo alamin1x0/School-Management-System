@@ -16,9 +16,9 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <ProgressBar
+        android:id="@+id/pdfProgress"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/pdfProgress"
-        android:layout_centerInParent="true"/>
+        android:layout_centerInParent="true" />
 
 </RelativeLayout>

@@ -1,55 +1,65 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
 
-    <item android:id="@+id/navigation_profile"
-        android:title="প্রোফাইল"
-        android:icon="@drawable/newprofil"/>
+    <!--    <item-->
+    <!--        android:id="@+id/navigation_profile"-->
+    <!--        android:icon="@drawable/newprofil"-->
+    <!--        android:title="প্রোফাইল" />-->
 
-    <item android:id="@+id/navigation_quiz"
-        android:title="কুইজ"
-        android:icon="@drawable/ic_baseline_extension_24"/>
-
-
-    <item android:id="@+id/navigation_video"
-        android:title="ভিডিও লেকচার"
-        android:icon="@drawable/newvideo"/>
-
-    <item android:id="@+id/navigation_ebook"
-        android:title="বই"
-        android:icon="@drawable/newbook"/>
-
-    <item android:id="@+id/navigation_studentlist"
-        android:title="স্টুডেন্ট"
-        android:icon="@drawable/mortarboard"/>
+    <!--    <item-->
+    <!--        android:id="@+id/navigation_quiz"-->
+    <!--        android:icon="@drawable/ic_baseline_extension_24"-->
+    <!--        android:title="কুইজ" />-->
 
 
-    <item android:id="@+id/navigation_website"
-        android:title="ওয়েবসাইট"
-        android:icon="@drawable/newwebsite"/>
+    <item
+        android:id="@+id/navigation_video"
+        android:icon="@drawable/newvideo"
+        android:title="ভিডিও লেকচার" />
+
+    <item
+        android:id="@+id/navigation_ebook"
+        android:icon="@drawable/newbook"
+        android:title="বই" />
+
+    <item
+        android:id="@+id/navigation_studentlist"
+        android:icon="@drawable/mortarboard"
+        android:title="স্টুডেন্ট" />
 
 
-    <item android:id="@+id/navigation_share"
-        android:title="শেয়ার"
-        android:icon="@drawable/newshare"/>
+    <item
+        android:id="@+id/navigation_website"
+        android:icon="@drawable/newwebsite"
+        android:title="ওয়েবসাইট" />
 
 
-    <item android:id="@+id/navigation_result"
-        android:title="রেজাল্ট"
-        android:icon="@drawable/newresult"/>
+    <item
+        android:id="@+id/navigation_share"
+        android:icon="@drawable/newshare"
+        android:title="শেয়ার" />
 
 
-    <item android:id="@+id/navigation_admission"
-        android:title="ভর্তি ফরম"
-        android:icon="@drawable/newadmission"/>
+    <item
+        android:id="@+id/navigation_result"
+        android:icon="@drawable/newresult"
+        android:title="রেজাল্ট" />
 
-    <item android:id="@+id/navigation_contact"
-        android:title="অভিযোগ"
-        android:icon="@drawable/contact"/>
 
-    <item android:id="@+id/navigation_developer"
-        android:title="ডেভোলপার"
-        android:icon="@drawable/newuser"/>
+    <item
+        android:id="@+id/navigation_admission"
+        android:icon="@drawable/newadmission"
+        android:title="ভর্তি ফরম" />
 
+    <item
+        android:id="@+id/navigation_contact"
+        android:icon="@drawable/contact"
+        android:title="অভিযোগ" />
+
+    <item
+        android:id="@+id/navigation_developer"
+        android:icon="@drawable/newuser"
+        android:title="ডেভোলপার" />
 
 
     <!--    <item android:id="@+id/navigation_theme"-->
@@ -57,17 +67,14 @@
     <!--        android:icon="@drawable/theme"/>-->
 
 
-
     <!--    <item android:id="@+id/navigation_rate"-->
-<!--        android:title="Rate Us"-->
-<!--        android:icon="@drawable/newrate"/>-->
+    <!--        android:title="Rate Us"-->
+    <!--        android:icon="@drawable/newrate"/>-->
 
 
-<!--    <item android:id="@+id/logout"-->
-<!--        android:title="Logout"-->
-<!--        android:icon="@drawable/newlogout"/>-->
-
-
+    <!--    <item android:id="@+id/logout"-->
+    <!--        android:title="Logout"-->
+    <!--        android:icon="@drawable/newlogout"/>-->
 
 
 </menu>

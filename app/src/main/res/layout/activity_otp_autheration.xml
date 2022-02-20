@@ -9,86 +9,86 @@
 
 
     <ImageView
+        android:id="@+id/logo"
         android:layout_width="100dp"
         android:layout_height="100dp"
-        android:src="@drawable/shsplaystore"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="40dp"
-        android:id="@+id/logo">
+        android:src="@drawable/shsplaystore">
 
     </ImageView>
 
 
     <TextView
+        android:id="@+id/textHeading"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="আপনি প্রাপ্ত ওটিপি প্রবেশ করুন"
-        android:textSize="20sp"
-        android:textAlignment="center"
-        android:padding="20dp"
-        android:textStyle="bold"
-        android:textColor="@color/titelcolorbd"
         android:layout_below="@+id/logo"
-        android:id="@+id/textHeading"
-        android:gravity="center_horizontal">
+        android:gravity="center_horizontal"
+        android:padding="20dp"
+        android:text="আপনি প্রাপ্ত ওটিপি প্রবেশ করুন"
+        android:textAlignment="center"
+        android:textColor="@color/titelcolorbd"
+        android:textSize="20sp"
+        android:textStyle="bold">
 
     </TextView>
 
 
     <EditText
+        android:id="@+id/getotp"
         android:layout_width="250dp"
         android:layout_height="50dp"
-        android:layout_centerHorizontal="true"
         android:layout_below="@id/textHeading"
+        android:layout_centerHorizontal="true"
         android:layout_marginLeft="120dp"
         android:layout_marginRight="120dp"
-        android:hint="এখানে ওটিপি প্রবেশ করান"
-        android:textColor="@color/black"
-        android:id="@+id/getotp"
-        android:textAlignment="center"
         android:gravity="center_horizontal"
-        android:inputType="number">
+        android:hint="এখানে ওটিপি প্রবেশ করান"
+        android:inputType="number"
+        android:textAlignment="center"
+        android:textColor="@color/black">
 
     </EditText>
 
 
     <TextView
+        android:id="@+id/changeNumber"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="ওটিপি পাইনি ? আপনার নম্বর পরিবর্তন করুন"
-        android:id="@+id/changeNumber"
         android:layout_below="@id/getotp"
         android:layout_centerHorizontal="true"
+        android:layout_marginTop="15sp"
+        android:text="ওটিপি পাইনি ? আপনার নম্বর পরিবর্তন করুন"
         android:textColor="@color/titelcolorbd"
-        android:textSize="17sp"
-        android:layout_marginTop="15sp">
+        android:textSize="17sp">
 
     </TextView>
 
     <android.widget.Button
+        android:id="@+id/verifyOtp"
         android:layout_width="wrap_content"
         android:layout_height="40dp"
         android:layout_below="@id/changeNumber"
-        android:id="@+id/verifyOtp"
         android:layout_centerHorizontal="true"
-        android:textColor="@color/white"
-        android:paddingLeft="40dp"
-        android:text="ওটিপি যাচাই করুন"
         android:layout_marginTop="50dp"
+        android:background="@color/titelcolorbd"
+        android:paddingLeft="40dp"
         android:paddingRight="40dp"
-        android:background="@color/titelcolorbd">
+        android:text="ওটিপি যাচাই করুন"
+        android:textColor="@color/white">
 
     </android.widget.Button>
 
 
     <ProgressBar
+        android:id="@+id/progressBarVerifyOtp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_centerHorizontal="true"
         android:layout_below="@id/verifyOtp"
-        android:id="@+id/progressBarVerifyOtp"
-        android:visibility="invisible"
-        android:layout_marginTop="30dp">
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:visibility="invisible">
 
     </ProgressBar>
 

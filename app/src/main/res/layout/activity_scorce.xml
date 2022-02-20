@@ -1,22 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
     android:gravity="center_horizontal"
+    android:orientation="vertical"
     tools:context=".ui.quiz.ScorceActivity">
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="70dp"
         android:text="Your Score"
         android:textColor="@color/textcolor"
         android:textSize="22sp"
-        android:layout_marginTop="70dp"
-        android:textStyle="bold"/>
+        android:textStyle="bold" />
 
     <LinearLayout
         android:layout_width="wrap_content"
@@ -26,20 +25,20 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
             android:text="Score : "
-            android:textSize="19sp"
             android:textColor="@color/textcolor"
-            android:layout_marginTop="30dp"/>
+            android:textSize="19sp" />
 
         <TextView
+            android:id="@+id/score"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:id="@+id/score"
-            android:textSize="19sp"
+            android:layout_marginLeft="12dp"
+            android:layout_marginTop="30dp"
             android:text="10"
             android:textColor="@color/textcolor"
-            android:layout_marginTop="30dp"
-            android:layout_marginLeft="12dp"/>
+            android:textSize="19sp" />
 
     </LinearLayout>
 
@@ -51,20 +50,20 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
             android:text="Total : "
-            android:textSize="19sp"
             android:textColor="@color/textcolor"
-            android:layout_marginTop="30dp"/>
+            android:textSize="19sp" />
 
         <TextView
+            android:id="@+id/total"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:id="@+id/total"
-            android:textSize="19sp"
+            android:layout_marginLeft="12dp"
+            android:layout_marginTop="30dp"
             android:text="10"
             android:textColor="@color/textcolor"
-            android:layout_marginTop="30dp"
-            android:layout_marginLeft="12dp"/>
+            android:textSize="19sp" />
 
     </LinearLayout>
 

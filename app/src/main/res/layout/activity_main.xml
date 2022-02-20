@@ -30,6 +30,7 @@
             android:layout_width="match_parent"
             android:layout_height="50dp"
             android:background="?android:attr/windowBackground"
+            app:itemIconSize="25sp"
             app:itemIconTint="@color/bottom_navigation_color"
             app:itemTextColor="@color/colorPrimary"
             app:labelVisibilityMode="selected"
@@ -45,9 +46,13 @@
         android:layout_width="wrap_content"
         android:layout_height="match_parent"
         android:layout_gravity="start"
+        android:background="@color/white"
         android:fitsSystemWindows="true"
         app:headerLayout="@layout/drawer_header"
+        app:itemIconSize="25sp"
+        app:itemIconTint="@color/colorPrimary"
         app:itemTextAppearance="?android:attr/textAppearanceMedium"
+        app:itemTextColor="@color/black"
         app:menu="@menu/navigation_drawer" />
 
 </androidx.drawerlayout.widget.DrawerLayout>

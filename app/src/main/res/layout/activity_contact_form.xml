@@ -4,32 +4,33 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:focusableInTouchMode="true"
     tools:context=".contact.ContactForm">
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:padding="16dp"
-        android:orientation="vertical">
+        android:focusableInTouchMode="true"
+        android:orientation="vertical"
+        android:padding="16dp">
 
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:text="অভিযোগ পত্র"
-            android:gravity="center"
             android:layout_margin="10dp"
-            android:padding="15dp"
-            android:layout_marginBottom="10dp"
             android:layout_marginLeft="10dp"
             android:layout_marginRight="10dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/bannder_bg"
+            android:gravity="center"
+            android:padding="15dp"
+            android:paddingBottom="20dp"
+            android:text="অভিযোগ পত্র"
             android:textAllCaps="true"
             android:textColor="@color/white"
-            android:background="#20ad96"
             android:textSize="22sp"
-            android:paddingBottom="20dp"
-            android:textStyle="bold"/>
-
+            android:textStyle="bold" />
 
 
         <com.google.android.material.textfield.TextInputLayout
@@ -42,50 +43,49 @@
                 android:id="@+id/Name"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:hint="বিষয়"
-                android:inputType="text"/>
+                android:hint="বিষয়..."
+                android:inputType="text" />
         </com.google.android.material.textfield.TextInputLayout>
 
-<!--        <com.google.android.material.textfield.TextInputLayout-->
-<!--            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"-->
-<!--            android:layout_width="match_parent"-->
-<!--            android:layout_height="match_parent"-->
-<!--            android:layout_marginTop="16dp">-->
+        <!--        <com.google.android.material.textfield.TextInputLayout-->
+        <!--            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"-->
+        <!--            android:layout_width="match_parent"-->
+        <!--            android:layout_height="match_parent"-->
+        <!--            android:layout_marginTop="16dp">-->
 
-<!--            <com.google.android.material.textfield.TextInputEditText-->
-<!--                android:id="@+id/Email"-->
-<!--                android:layout_width="match_parent"-->
-<!--                android:layout_height="wrap_content"-->
-<!--                android:hint="ইমেইল"-->
-<!--                android:inputType="textEmailAddress"/>-->
-<!--        </com.google.android.material.textfield.TextInputLayout>-->
+        <!--            <com.google.android.material.textfield.TextInputEditText-->
+        <!--                android:id="@+id/Email"-->
+        <!--                android:layout_width="match_parent"-->
+        <!--                android:layout_height="wrap_content"-->
+        <!--                android:hint="ইমেইল"-->
+        <!--                android:inputType="textEmailAddress"/>-->
+        <!--        </com.google.android.material.textfield.TextInputLayout>-->
 
 
         <com.google.android.material.textfield.TextInputLayout
             style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_marginTop="15dp">
+            android:layout_marginTop="10dp">
 
             <com.google.android.material.textfield.TextInputEditText
                 android:id="@+id/Contact"
                 android:layout_width="match_parent"
-                android:layout_height="300dp"
-                android:padding="30dp"
-                android:hint="অভিযোগ"/>
+                android:layout_height="200dp"
+                android:gravity="top"
+                android:hint="অভিযোগ..." />
         </com.google.android.material.textfield.TextInputLayout>
-
-
 
 
         <com.google.android.material.button.MaterialButton
             android:id="@+id/addBtn"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="জমা দিন"
             android:layout_marginTop="16dp"
-            android:background="@color/titelcolorbd"
-            android:textAllCaps="false"/>
+            android:background="@drawable/bannder_bg"
+            android:text="জমা দিন"
+            android:textAllCaps="false"
+            android:textSize="20sp" />
 
 
     </LinearLayout>

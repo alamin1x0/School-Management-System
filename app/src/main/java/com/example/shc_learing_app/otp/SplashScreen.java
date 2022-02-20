@@ -8,6 +8,7 @@ import android.os.Handler;
 
 import com.example.shc_learing_app.MainActivity;
 import com.example.shc_learing_app.R;
+import com.example.shc_learing_app.result.ResultActivity;
 import com.google.firebase.auth.FirebaseAuth;
 
 public class SplashScreen extends AppCompatActivity {
@@ -20,15 +21,17 @@ public class SplashScreen extends AppCompatActivity {
         //getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
         getSupportActionBar().hide();
 
+//        Query.query("Class 12","Nasim","0199");
+
         Handler handler = new Handler();
         handler.postDelayed(new Runnable() {
             @Override
             public void run() {
-                Intent intent = new Intent(SplashScreen.this, MainActivity.class);
+                Intent intent = new Intent(SplashScreen.this, ResultActivity.class);
                 startActivity(intent);
                 finish();
             }
-        }, 2000);
+        }, 100);
     }
 
     @Override

@@ -1,61 +1,65 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ScrollView
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:focusableInTouchMode="true"
     tools:context=".admission.RegistionForm">
 
     <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        android:focusableInTouchMode="true">
 
         <androidx.cardview.widget.CardView
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_centerInParent="true"
-            android:layout_marginBottom="20dp"
-            android:layout_marginTop="20dp"
             android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
             android:layout_marginRight="20dp"
+            android:layout_marginBottom="20dp"
+            android:focusableInTouchMode="true"
             app:cardCornerRadius="10dp"
             app:cardElevation="3dp"
             app:cardPreventCornerOverlap="false"
             app:cardUseCompatPadding="true">
 
             <RelativeLayout
+                android:id="@+id/relativeLayout1"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:id="@+id/relativeLayout1">
+                android:layout_height="match_parent">
 
                 <LinearLayout
+                    android:id="@+id/linearlayout1"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:gravity="center"
-                    android:orientation="vertical"
                     android:background="@color/deeppurple"
-                    android:id="@+id/linearlayout1">
+                    android:gravity="center"
+                    android:orientation="vertical">
 
 
                     <ImageView
                         android:layout_width="64dp"
                         android:layout_height="64dp"
                         android:layout_marginTop="20dp"
-                        android:padding="12dp"
                         android:background="@drawable/circle_stroke_white"
+                        android:padding="12dp"
                         android:src="@drawable/ic_register"
                         app:tint="#fff" />
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="REGISTER FORM"
-                        android:fontFamily="sans-serif-medium"
-                        android:textColor="#fff"
                         android:layout_marginTop="10dp"
                         android:layout_marginBottom="20dp"
-                        android:textSize="22sp"/>
+                        android:fontFamily="sans-serif-medium"
+                        android:imeOptions="actionNext"
+                        android:importantForAutofill="no"
+                        android:text="REGISTER FORM"
+                        android:textColor="#fff"
+                        android:textSize="22sp" />
 
                 </LinearLayout>
 
@@ -63,28 +67,28 @@
                     android:id="@+id/imageView1"
                     android:layout_width="20dp"
                     android:layout_height="20dp"
-                    android:layout_marginTop="-10dp"
                     android:layout_below="@id/linearlayout1"
-                    android:rotation="45"
                     android:layout_centerHorizontal="true"
-                    android:src="@drawable/square"/>
+                    android:layout_marginTop="-10dp"
+                    android:rotation="45"
+                    android:src="@drawable/square" />
 
                 <RelativeLayout
                     android:id="@+id/relativeLayout2"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="30dp"
-                    android:layout_marginRight="30dp"
+                    android:layout_below="@id/imageView1"
                     android:layout_marginLeft="30dp"
-                    android:layout_below="@id/imageView1">
+                    android:layout_marginTop="30dp"
+                    android:layout_marginRight="30dp">
 
                     <ImageView
+                        android:id="@+id/imageView_user_icon"
                         android:layout_width="40dp"
                         android:layout_height="40dp"
                         android:background="@color/deeppurple"
-                        android:src="@drawable/ic_man_user"
                         android:padding="8dp"
-                        android:id="@+id/imageView_user_icon"
+                        android:src="@drawable/ic_man_user"
                         app:tint="#fff" />
 
                     <EditText
@@ -93,33 +97,31 @@
                         android:layout_height="wrap_content"
                         android:layout_alignBottom="@id/imageView_user_icon"
                         android:layout_alignParentTop="true"
-                        android:background="@color/transparent"
                         android:layout_toRightOf="@id/imageView_user_icon"
+                        android:background="@color/transparent"
                         android:hint="Name"
                         android:inputType="text"
                         android:paddingLeft="20dp"
-                        android:textSize="15sp"/>
+                        android:textSize="15sp" />
                 </RelativeLayout>
-
-
 
 
                 <RelativeLayout
                     android:id="@+id/relativeLayout3"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="30dp"
-                    android:layout_marginRight="30dp"
+                    android:layout_below="@id/relativeLayout2"
                     android:layout_marginLeft="30dp"
-                    android:layout_below="@id/relativeLayout2">
+                    android:layout_marginTop="30dp"
+                    android:layout_marginRight="30dp">
 
                     <ImageView
+                        android:id="@+id/imageView_user_email"
                         android:layout_width="40dp"
                         android:layout_height="40dp"
                         android:background="@color/deeppurple"
-                        android:src="@drawable/ic_man_user"
                         android:padding="8dp"
-                        android:id="@+id/imageView_user_email"
+                        android:src="@drawable/ic_man_user"
                         app:tint="#fff" />
 
                     <EditText
@@ -128,31 +130,32 @@
                         android:layout_height="wrap_content"
                         android:layout_alignBottom="@id/imageView_user_email"
                         android:layout_alignParentTop="true"
-                        android:background="@color/transparent"
                         android:layout_toRightOf="@id/imageView_user_email"
+                        android:background="@color/transparent"
                         android:hint="Father's Name"
+                        android:imeOptions="actionNext"
+                        android:importantForAutofill="no"
                         android:paddingLeft="20dp"
-                        android:textSize="15sp"/>
+                        android:textSize="15sp" />
                 </RelativeLayout>
-
 
 
                 <RelativeLayout
                     android:id="@+id/relativeLayout4"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="30dp"
-                    android:layout_marginRight="30dp"
+                    android:layout_below="@id/relativeLayout3"
                     android:layout_marginLeft="30dp"
-                    android:layout_below="@id/relativeLayout3">
+                    android:layout_marginTop="30dp"
+                    android:layout_marginRight="30dp">
 
                     <ImageView
+                        android:id="@+id/imageView_user_pass"
                         android:layout_width="40dp"
                         android:layout_height="40dp"
                         android:background="@color/deeppurple"
-                        android:src="@drawable/ic_idcard"
                         android:padding="8dp"
-                        android:id="@+id/imageView_user_pass"
+                        android:src="@drawable/ic_idcard"
                         app:tint="#fff" />
 
                     <EditText
@@ -161,11 +164,13 @@
                         android:layout_height="wrap_content"
                         android:layout_alignBottom="@id/imageView_user_pass"
                         android:layout_alignParentTop="true"
-                        android:background="@color/transparent"
                         android:layout_toRightOf="@id/imageView_user_pass"
+                        android:background="@color/transparent"
                         android:hint="Father NID Number"
+                        android:imeOptions="actionNext"
+                        android:importantForAutofill="no"
                         android:paddingLeft="20dp"
-                        android:textSize="15sp"/>
+                        android:textSize="15sp" />
                 </RelativeLayout>
 
 
@@ -173,18 +178,18 @@
                     android:id="@+id/relativeLayout5"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="30dp"
-                    android:layout_marginRight="30dp"
+                    android:layout_below="@id/relativeLayout4"
                     android:layout_marginLeft="30dp"
-                    android:layout_below="@id/relativeLayout4">
+                    android:layout_marginTop="30dp"
+                    android:layout_marginRight="30dp">
 
                     <ImageView
+                        android:id="@+id/imageView_user_repass"
                         android:layout_width="40dp"
                         android:layout_height="40dp"
                         android:background="@color/deeppurple"
-                        android:src="@drawable/ic_phone"
                         android:padding="8dp"
-                        android:id="@+id/imageView_user_repass"
+                        android:src="@drawable/ic_phone"
                         app:tint="#fff" />
 
                     <EditText
@@ -193,11 +198,13 @@
                         android:layout_height="wrap_content"
                         android:layout_alignBottom="@id/imageView_user_repass"
                         android:layout_alignParentTop="true"
-                        android:background="@color/transparent"
                         android:layout_toRightOf="@id/imageView_user_repass"
+                        android:background="@color/transparent"
                         android:hint="Father Phone Number"
+                        android:imeOptions="actionNext"
+                        android:importantForAutofill="no"
                         android:paddingLeft="20dp"
-                        android:textSize="15sp"/>
+                        android:textSize="15sp" />
                 </RelativeLayout>
 
 
@@ -205,18 +212,18 @@
                     android:id="@+id/relativeLayout6"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="30dp"
-                    android:layout_marginRight="30dp"
+                    android:layout_below="@id/relativeLayout5"
                     android:layout_marginLeft="30dp"
-                    android:layout_below="@id/relativeLayout5">
+                    android:layout_marginTop="30dp"
+                    android:layout_marginRight="30dp">
 
                     <ImageView
+                        android:id="@+id/imageView_user_mname"
                         android:layout_width="40dp"
                         android:layout_height="40dp"
                         android:background="@color/deeppurple"
-                        android:src="@drawable/ic_man_user"
                         android:padding="8dp"
-                        android:id="@+id/imageView_user_mname"
+                        android:src="@drawable/ic_man_user"
                         app:tint="#fff" />
 
                     <EditText
@@ -225,32 +232,28 @@
                         android:layout_height="wrap_content"
                         android:layout_alignBottom="@id/imageView_user_mname"
                         android:layout_alignParentTop="true"
-                        android:background="@color/transparent"
                         android:layout_toRightOf="@id/imageView_user_mname"
+                        android:background="@color/transparent"
                         android:hint="Mother Name"
+                        android:imeOptions="actionDone"
+                        android:importantForAutofill="no"
                         android:paddingLeft="20dp"
-                        android:textSize="15sp"/>
+                        android:textSize="15sp" />
                 </RelativeLayout>
 
 
-
-
-
-
-<!--                <Button-->
-<!--                    android:id="@+id/button1"-->
-<!--                    android:layout_width="match_parent"-->
-<!--                    android:layout_height="wrap_content"-->
-<!--                    android:layout_below="@id/relativeLayout6"-->
-<!--                    android:text="Submit"-->
-<!--                    android:background="@color/deeppurple"-->
-<!--                    android:textColor="#fff"-->
-<!--                    android:fontFamily="sans-serif"-->
-<!--                    android:layout_marginLeft="30dp"-->
-<!--                    android:layout_marginRight="30dp"-->
-<!--                    android:layout_marginTop="15dp"/>-->
-
-
+                <!--                <Button-->
+                <!--                    android:id="@+id/button1"-->
+                <!--                    android:layout_width="match_parent"-->
+                <!--                    android:layout_height="wrap_content"-->
+                <!--                    android:layout_below="@id/relativeLayout6"-->
+                <!--                    android:text="Submit"-->
+                <!--                    android:background="@color/deeppurple"-->
+                <!--                    android:textColor="#fff"-->
+                <!--                    android:fontFamily="sans-serif"-->
+                <!--                    android:layout_marginLeft="30dp"-->
+                <!--                    android:layout_marginRight="30dp"-->
+                <!--                    android:layout_marginTop="15dp"/>-->
 
 
             </RelativeLayout>
