@@ -22,10 +22,10 @@
         android:icon="@drawable/newbook"
         android:title="বই" />
 
-    <item
-        android:id="@+id/navigation_studentlist"
-        android:icon="@drawable/mortarboard"
-        android:title="স্টুডেন্ট" />
+    <!--    <item-->
+    <!--        android:id="@+id/navigation_studentlist"-->
+    <!--        android:icon="@drawable/mortarboard"-->
+    <!--        android:title="স্টুডেন্ট" />-->
 
 
     <item
@@ -38,6 +38,11 @@
         android:id="@+id/navigation_share"
         android:icon="@drawable/newshare"
         android:title="শেয়ার" />
+
+    <item
+        android:id="@+id/navigation_rate"
+        android:icon="@drawable/newrate"
+        android:title="রেটিং" />
 
 
     <item
@@ -65,11 +70,6 @@
     <!--    <item android:id="@+id/navigation_theme"-->
     <!--        android:title="Themes"-->
     <!--        android:icon="@drawable/theme"/>-->
-
-
-        <item android:id="@+id/navigation_rate"
-            android:title="Rate Us"
-            android:icon="@drawable/newrate"/>
 
 
     <!--    <item android:id="@+id/logout"-->

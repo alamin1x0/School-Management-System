@@ -16,18 +16,18 @@
             android:layout_height="match_parent"
             android:orientation="vertical">
 
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_margin="10dp"
-                android:background="@drawable/alltitile_bg"
-                android:layout_centerInParent="true"
-                android:gravity="center_horizontal"
-                android:text="প্রধান শিক্ষক"
-                android:paddingTop="8dp"
-                android:textColor="@color/white"
-                android:textSize="25sp"
-                android:textStyle="bold" />
+<!--            <TextView-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_margin="10dp"-->
+<!--                android:background="@drawable/headerfooter_bg"-->
+<!--                android:layout_centerInParent="true"-->
+<!--                android:gravity="center_horizontal"-->
+<!--                android:text="প্রধান শিক্ষক"-->
+<!--                android:paddingTop="8dp"-->
+<!--                android:textColor="@color/white"-->
+<!--                android:textSize="25sp"-->
+<!--                android:textStyle="bold" />-->
 
             <View
                 android:layout_width="match_parent"
@@ -56,18 +56,18 @@
             </LinearLayout>
 
 
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_margin="10dp"
-                android:layout_marginTop="16dp"
-                android:paddingTop="8dp"
-                android:background="@drawable/alltitile_bg"
-                android:gravity="center"
-                android:text="বিজ্ঞান বিভাগ"
-                android:textColor="@color/white"
-                android:textSize="25sp"
-                android:textStyle="bold" />
+<!--            <TextView-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_margin="10dp"-->
+<!--                android:layout_marginTop="16dp"-->
+<!--                android:paddingTop="8dp"-->
+<!--                android:background="@drawable/headerfooter_bg"-->
+<!--                android:gravity="center"-->
+<!--                android:text="বিজ্ঞান বিভাগ"-->
+<!--                android:textColor="@color/white"-->
+<!--                android:textSize="25sp"-->
+<!--                android:textStyle="bold" />-->
 
             <View
                 android:layout_width="match_parent"
@@ -96,19 +96,18 @@
             </LinearLayout>
 
 
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_margin="10dp"
-                android:paddingTop="8dp"
-
-                android:layout_marginTop="16dp"
-                android:background="@drawable/alltitile_bg"
-                android:gravity="center"
-                android:text="মানবিক বিভাগ"
-                android:textColor="@color/white"
-                android:textSize="25sp"
-                android:textStyle="bold" />
+<!--            <TextView-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_margin="10dp"-->
+<!--                android:paddingTop="8dp"-->
+<!--                android:layout_marginTop="16dp"-->
+<!--                android:background="@drawable/headerfooter_bg"-->
+<!--                android:gravity="center"-->
+<!--                android:text="মানবিক বিভাগ"-->
+<!--                android:textColor="@color/white"-->
+<!--                android:textSize="25sp"-->
+<!--                android:textStyle="bold" />-->
 
             <View
                 android:layout_width="match_parent"
@@ -138,19 +137,18 @@
             </LinearLayout>
 
 
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_margin="10dp"
-                android:layout_marginTop="16dp"
-                android:paddingTop="8dp"
-
-                android:background="@drawable/alltitile_bg"
-                android:gravity="center"
-                android:text="বাণিজ্য বিভাগ"
-                android:textColor="@color/white"
-                android:textSize="25sp"
-                android:textStyle="bold" />
+<!--            <TextView-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_margin="10dp"-->
+<!--                android:layout_marginTop="16dp"-->
+<!--                android:paddingTop="8dp"-->
+<!--                android:background="@drawable/headerfooter_bg"-->
+<!--                android:gravity="center"-->
+<!--                android:text="বাণিজ্য বিভাগ"-->
+<!--                android:textColor="@color/white"-->
+<!--                android:textSize="25sp"-->
+<!--                android:textStyle="bold" />-->
 
             <View
                 android:layout_width="match_parent"
@@ -179,18 +177,18 @@
             </LinearLayout>
 
 
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_margin="10dp"
-                android:layout_marginTop="16dp"
-                android:paddingTop="8dp"
-                android:background="@drawable/alltitile_bg"
-                android:gravity="center"
-                android:text="আইসিটি বিভাগ"
-                android:textColor="@color/white"
-                android:textSize="25sp"
-                android:textStyle="bold" />
+<!--            <TextView-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_margin="10dp"-->
+<!--                android:layout_marginTop="16dp"-->
+<!--                android:paddingTop="8dp"-->
+<!--                android:background="@drawable/headerfooter_bg"-->
+<!--                android:gravity="center"-->
+<!--                android:text="আইসিটি বিভাগ"-->
+<!--                android:textColor="@color/white"-->
+<!--                android:textSize="25sp"-->
+<!--                android:textStyle="bold" />-->
 
             <View
                 android:layout_width="match_parent"

@@ -198,10 +198,10 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
                 startActivity(new Intent(this, EbookActivity.class));
                 break;
 
-            case R.id.navigation_studentlist:
-                intent = new Intent(MainActivity.this, StudentList.class);
-                startActivity(intent);
-                break;
+//            case R.id.navigation_studentlist:
+//                intent = new Intent(MainActivity.this, StudentList.class);
+//                startActivity(intent);
+//                break;
 
             case R.id.navigation_website:
                 intent = new Intent(MainActivity.this, WebSiteActivity.class);
@@ -227,6 +227,24 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
             case R.id.navigation_developer:
                 intent = new Intent(MainActivity.this, developer.class);
                 startActivity(intent);
+                break;
+
+            case R.id.navigation_share:
+                final String appLink = "\nhttps://play.google.com/store/apps/details?id=" + this.getPackageName();
+                Intent sendInt = new Intent(Intent.ACTION_SEND);
+                sendInt.putExtra(Intent.EXTRA_SUBJECT, this.getString(R.string.app_name));
+                sendInt.putExtra(Intent.EXTRA_TEXT, this.getString(R.string.share_app_message) + appLink);
+                sendInt.setType("text/plain");
+                this.startActivity(Intent.createChooser(sendInt, "Share"));
+                break;
+
+            case R.id.navigation_rate:
+                final String appName = this.getPackageName();
+                try {
+                    this.startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("market://details?id=" + appName)));
+                } catch (android.content.ActivityNotFoundException anfe) {
+                    this.startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("http://play.google.com/store/apps/details?id=" + appName)));
+                }
                 break;
 
 
@@ -266,24 +284,6 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
 //                }
 //                break;
 
-
-            case R.id.navigation_share:
-                final String appLink = "\nhttps://play.google.com/store/apps/details?id=" + this.getPackageName();
-                Intent sendInt = new Intent(Intent.ACTION_SEND);
-                sendInt.putExtra(Intent.EXTRA_SUBJECT, this.getString(R.string.app_name));
-                sendInt.putExtra(Intent.EXTRA_TEXT, this.getString(R.string.share_app_message) + appLink);
-                sendInt.setType("text/plain");
-                this.startActivity(Intent.createChooser(sendInt, "Share"));
-                break;
-
-            case R.id.navigation_rate:
-                final String appName = this.getPackageName();
-                try {
-                    this.startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("market://details?id=" + appName)));
-                } catch (android.content.ActivityNotFoundException anfe) {
-                    this.startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("http://play.google.com/store/apps/details?id=" + appName)));
-                }
-                break;
 
         }
         return true;

@@ -24,7 +24,8 @@
     <color name="transparent">#00000000</color>
     <color name="deeppurple">#7c4dff</color>
 
-    <color name="titelcolorbd">#20ad96</color>
+    <color name="titelcolorbd">#f44236</color>
+<!--    <color name="titelcolorbd">#20ad96</color>-->
 
     <color name="headteacher">#c39d7d</color>
 
@@ -32,8 +33,7 @@
 
 
     <color name="otp">#25d366</color>
-    <color name="red">#EA1606</color>
-
+    <color name="red">#f44236</color>
 
     <!--color palette-->
     <color name="purple">#D4C4E3</color>
@@ -51,26 +51,5 @@
     <color name="card_violet">#FF9500</color>
     <color name="card_blue">#5AC8FA</color>
     <color name="card_green">#34C759</color>
-
-
-    <array name="color_picker">
-        <item>@color/white</item>
-        <item>@color/card_purple</item>
-        <item>@color/card_yellow</item>
-        <item>@color/card_red</item>
-        <item>@color/card_violet</item>
-        <item>@color/card_blue</item>
-        <item>@color/card_green</item>
-        <item>@color/peach</item>
-        <item>@color/green</item>
-        <item>@color/purple</item>
-        <item>@color/darkPurple</item>
-        <item>@color/blue</item>
-        <item>@color/orangeRed</item>
-        <item>@color/yellowOrange</item>
-        <item>@color/MangoTango</item>
-        <item>@color/maizeCrayola</item>
-    </array>
-
 
 </resources>

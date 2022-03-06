@@ -22,7 +22,7 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
             android:layout_marginTop="36dp"
-            android:background="@drawable/alltitile_bg"
+            android:background="@drawable/headerfooter_bg"
             android:text="বিদ্যালয়ের ইতিহাস"
             android:textColor="@color/white"
             android:textSize="25sp" />

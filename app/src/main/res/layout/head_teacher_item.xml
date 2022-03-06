@@ -15,18 +15,17 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
             android:layout_marginTop="36dp"
-            android:background="@drawable/alltitile_bg"
+            android:background="@drawable/headerfooter_bg"
             android:padding="4dp"
             android:text="প্রধান শিক্ষকের বানী"
             android:textColor="@color/white"
             android:textSize="25sp" />
 
 
-
         <ImageView
             android:layout_width="100dp"
             android:layout_height="100dp"
-            android:src="@drawable/sakibalamin" />
+            android:src="@drawable/sakiblogo" />
 
 
         <TextView
@@ -43,6 +42,3 @@
 
 
 </LinearLayout>
-
-
-    <!--</LinearLayout>-->
