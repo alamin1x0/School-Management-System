@@ -30,7 +30,6 @@
             android:layout_width="match_parent"
             android:layout_height="50dp"
             android:background="?android:attr/windowBackground"
-            app:itemIconSize="25sp"
             app:itemIconTint="@color/bottom_navigation_color"
             app:itemTextColor="@color/colorPrimary"
             app:labelVisibilityMode="selected"

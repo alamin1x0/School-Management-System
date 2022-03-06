@@ -1,5 +1,6 @@
 package com.example.shc_learing_app.ui.gallery;
 
+import android.annotation.SuppressLint;
 import android.content.Context;
 import android.content.Intent;
 import android.view.LayoutInflater;
@@ -35,7 +36,7 @@ public class GalleryAdapter extends RecyclerView.Adapter<GalleryAdapter.galleryV
     }
 
     @Override
-    public void onBindViewHolder(@NonNull galleryViewAdapter holder, int position) {
+    public void onBindViewHolder(@NonNull galleryViewAdapter holder, @SuppressLint("RecyclerView") int position) {
 
         Glide.with(context).load(images.get(position)).into(holder.imageView);
         holder.imageView.setOnClickListener(new View.OnClickListener() {

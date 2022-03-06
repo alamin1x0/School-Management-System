@@ -6,8 +6,7 @@ import android.widget.EditText;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AlertDialog;
 
-import com.example.shc_learing_app.admission.AdmissionData;
-import com.example.shc_learing_app.studentlist.StudentListData;
+
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
@@ -30,8 +29,8 @@ public class Query {
                     @Override
                     public void onDataChange(@NonNull DataSnapshot snapshot) {
                         for (DataSnapshot snap : snapshot.getChildren()) {
-                            AdmissionData admissionData = snap.getValue(AdmissionData.class);
-                            builder.setMessage(admissionData.getAddress().toString());
+//                            ResultModel admissionData = snap.getValue(AdmissionData.class);
+//                            builder.setMessage(admissionData.getAddress().toString());
                             builder.create();
                             builder.show();
 

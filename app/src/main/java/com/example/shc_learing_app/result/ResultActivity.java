@@ -1,5 +1,6 @@
 package com.example.shc_learing_app.result;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -10,10 +11,13 @@ import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Spinner;
+import android.widget.Toast;
 
 import com.example.shc_learing_app.R;
-
-import es.dmoral.toasty.Toasty;
+import com.google.firebase.database.DataSnapshot;
+import com.google.firebase.database.DatabaseError;
+import com.google.firebase.database.FirebaseDatabase;
+import com.google.firebase.database.ValueEventListener;
 
 public class ResultActivity extends AppCompatActivity {
 
@@ -41,7 +45,7 @@ public class ResultActivity extends AppCompatActivity {
 
 
         //class spinner
-        String[] items = new String[]{"ক্লাস নির্বাচন করুন", "ক্লাস ৬", "ক্লাস ৭", "ক্লাস ৮", "ক্লাস ৯"};
+        String[] items = new String[]{"ক্লাস নির্বাচন করুন", "ক্লাস ৬", "ক্লাস ৭", "ক্লাস ৮", "ক্লাস ৯", "ক্লাস ১০"};
         addAllClassName.setAdapter(new ArrayAdapter<String>(this, android.R.layout.simple_spinner_dropdown_item, items));
 
         addAllClassName.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
@@ -75,39 +79,45 @@ public class ResultActivity extends AppCompatActivity {
         });
 
 
-        addResultBtn.setOnClickListener(v -> {
-            String roll = inputRollId.getText().toString();
+        addResultBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
 
-            addAllClassName.getSelectedItem().toString();
-            //addAllYears.getSelectedItem().toString();
-
-//            if (categoryClass.equals("ক্লাস নির্বাচন করুন")) {
-//                Toasty.warning(this, "দয়া করে আপনারা ক্লাস সিলেক্ট করুন", Toasty.LENGTH_SHORT).show();
-//            } else if (categoryYear.equals("সাল")) {
-//                Toasty.warning(this, "দয়া করে আপনারা পরীক্ষার সাল সিলেক্ট করুন", Toasty.LENGTH_SHORT).show();
-//            } else if (roll.isEmpty()) {
-//                Toasty.warning(this, "দয়া করে আপনারা পরীক্ষার রোল সিলেক্ট করুন", Toasty.LENGTH_SHORT).show();
-//                inputRollId.setError("পরীক্ষার রোল");
-//                inputRollId.requestFocus();
-//                return;
-//            } else {
-//
-//            }
-
-
-            Query.query(categoryClass,categoryYear, roll, alertDialog);
-
+                if (validator()) {
+                    query();
+                }
+            }
         });
 
+    }
 
-//
-//        submit.setOnClickListener(v->{
-//            String csl = name.getText().toString();
-//            String phon = phone.getText().toString();
-//
-//            Query.query(csl,phon,alertDialog);
-//
-//        });
 
+    void query() {
+
+        String cls = addAllClassName.getSelectedItem().toString();
+
+        FirebaseDatabase.getInstance().getReference("result").child(cls).child(addAllYears.getSelectedItem().toString())
+                .orderByChild("roll")
+                .equalTo(inputRollId.getText().toString())
+                .addValueEventListener(new ValueEventListener() {
+                    @Override
+                    public void onDataChange(@NonNull DataSnapshot snapshot) {
+                        for (DataSnapshot child : snapshot.getChildren()) {
+
+                            ResultModel resultModel = child.getValue(ResultModel.class);
+
+                            Toast.makeText(ResultActivity.this, resultModel.getGpa(), Toast.LENGTH_SHORT).show();
+                        }
+                    }
+
+                    @Override
+                    public void onCancelled(@NonNull DatabaseError error) {
+
+                    }
+                });
+    }
+
+    boolean validator() {
+        return true;
     }
 }

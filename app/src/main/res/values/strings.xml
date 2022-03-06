@@ -24,6 +24,7 @@
     <string name="autolink_text"> নামঃ  আল-আমিন  \n  ইমেল: alaminsakib.cse@gmail.com \n  ফোন: +8801762868864 \n  ওয়েবসাইট: https://developer-alamin.web.app/
 
     </string>
+    <string name="share_app_message">SHS Learing App</string>
 
     <string-array name="theme">
 

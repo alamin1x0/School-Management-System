@@ -11,12 +11,14 @@ import androidx.navigation.NavController;
 import androidx.navigation.Navigation;
 import androidx.navigation.ui.NavigationUI;
 
+import android.annotation.SuppressLint;
 import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.net.ConnectivityManager;
 import android.net.NetworkInfo;
+import android.net.Uri;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuInflater;
@@ -27,6 +29,7 @@ import com.example.shc_learing_app.admission.AdmissionActivity;
 import com.example.shc_learing_app.contact.ContactForm;
 import com.example.shc_learing_app.developer.developer;
 import com.example.shc_learing_app.ebook.EbookActivity;
+import com.example.shc_learing_app.result.ResultActivity;
 import com.example.shc_learing_app.studentlist.StudentList;
 import com.example.shc_learing_app.video.VideoLucture;
 import com.example.shc_learing_app.website.WebSiteActivity;
@@ -206,8 +209,8 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
                 break;
 
             case R.id.navigation_result:
-//                intent = new Intent(MainActivity.this, ResultActivity.class);
-//                startActivity(intent);
+                intent = new Intent(MainActivity.this, ResultActivity.class);
+                startActivity(intent);
                 break;
 
 
@@ -239,18 +242,18 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
 //                break;
 
 
-            case R.id.navigation_share:
-                try {
-                    Intent i = new Intent(Intent.ACTION_SEND);
-                    i.setType("text/plain");
-                    i.putExtra(Intent.EXTRA_SUBJECT, "SHS_LEARING_APP");
-                    i.putExtra(Intent.EXTRA_TEXT, "https://firebasestorage.googleapis.com/v0/b/admin-dash-42c58.appspot.com/o/App%2FSHS_Testing.apk?alt=media&token=75da9ae6-dd5d-435f-9f4c-68ebb8300327" + getApplicationContext().getPackageName());
-                    startActivity(Intent.createChooser(i, "Share With"));
-                } catch (Exception e) {
-                    Toast.makeText(this, "Unable to share this app.", Toast.LENGTH_SHORT).show();
-                }
-
-                break;
+//            case R.id.navigation_share:
+//                try {
+//                    Intent i = new Intent(Intent.ACTION_SEND);
+//                    i.setType("text/plain");
+//                    i.putExtra(Intent.EXTRA_SUBJECT, "SHS_LEARING_APP");
+//                    i.putExtra(Intent.EXTRA_TEXT, "https://firebasestorage.googleapis.com/v0/b/admin-dash-42c58.appspot.com/o/App%2FSHS_Testing.apk?alt=media&token=75da9ae6-dd5d-435f-9f4c-68ebb8300327" + getApplicationContext().getPackageName());
+//                    startActivity(Intent.createChooser(i, "Share With"));
+//                } catch (Exception e) {
+//                    Toast.makeText(this, "Unable to share this app.", Toast.LENGTH_SHORT).show();
+//                }
+//
+//                break;
 
 
 //            case R.id.navigation_rate:
@@ -262,6 +265,26 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
 //                    Toasty.success(this,"Unable to open\n"+e.getMessage(), Toast.LENGTH_SHORT).show();
 //                }
 //                break;
+
+
+            case R.id.navigation_share:
+                final String appLink = "\nhttps://play.google.com/store/apps/details?id=" + this.getPackageName();
+                Intent sendInt = new Intent(Intent.ACTION_SEND);
+                sendInt.putExtra(Intent.EXTRA_SUBJECT, this.getString(R.string.app_name));
+                sendInt.putExtra(Intent.EXTRA_TEXT, this.getString(R.string.share_app_message) + appLink);
+                sendInt.setType("text/plain");
+                this.startActivity(Intent.createChooser(sendInt, "Share"));
+                break;
+
+            case R.id.navigation_rate:
+                final String appName = this.getPackageName();
+                try {
+                    this.startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("market://details?id=" + appName)));
+                } catch (android.content.ActivityNotFoundException anfe) {
+                    this.startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("http://play.google.com/store/apps/details?id=" + appName)));
+                }
+                break;
+
         }
         return true;
     }
@@ -333,7 +356,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
     private boolean isConnected() {
         ConnectivityManager connectivityManager = (ConnectivityManager) getSystemService(Context.CONNECTIVITY_SERVICE);
 
-        NetworkInfo networkInfo = connectivityManager.getActiveNetworkInfo();
+        @SuppressLint("MissingPermission") NetworkInfo networkInfo = connectivityManager.getActiveNetworkInfo();
 
         return networkInfo != null && networkInfo.isConnected();
     }

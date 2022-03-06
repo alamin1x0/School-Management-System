@@ -67,9 +67,9 @@
     <!--        android:icon="@drawable/theme"/>-->
 
 
-    <!--    <item android:id="@+id/navigation_rate"-->
-    <!--        android:title="Rate Us"-->
-    <!--        android:icon="@drawable/newrate"/>-->
+        <item android:id="@+id/navigation_rate"
+            android:title="Rate Us"
+            android:icon="@drawable/newrate"/>
 
 
     <!--    <item android:id="@+id/logout"-->

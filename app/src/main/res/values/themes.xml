@@ -3,6 +3,7 @@
     <style name="Theme.SHCLearingApp" parent="Theme.MaterialComponents.Light.DarkActionBar">
 
         <item name="fontFamily">@font/banglaregular</item>
+
         <item name="colorPrimary">@color/colorPrimary</item>
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">@color/colorAccent</item>
