@@ -77,6 +77,8 @@ dependencies {
 
     implementation "com.airbnb.android:lottie:3.7.0"
 
+    implementation 'com.facebook.android:audience-network-sdk:6.2.0'
+
 
     implementation 'com.github.tejpratap46:PDFCreatorAndroid:3.0.2'
 
