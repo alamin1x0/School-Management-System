@@ -4,23 +4,48 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="app/src/main/res/drawable-v24/circle_stroke_white.xml" value="0.1365" />
+        <entry key="app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.1745" />
+        <entry key="app/src/main/res/drawable-v24/ic_man_user.xml" value="0.1745" />
         <entry key="app/src/main/res/drawable-v24/square.xml" value="0.1485" />
         <entry key="app/src/main/res/drawable/alltitile_bg.xml" value="0.1365" />
         <entry key="app/src/main/res/drawable/bannder_bg.xml" value="0.1365" />
+        <entry key="app/src/main/res/drawable/circle.xml" value="0.1745" />
         <entry key="app/src/main/res/drawable/headerfooter_bg.xml" value="0.1485" />
+        <entry key="app/src/main/res/drawable/ic_about.xml" value="0.1745" />
+        <entry key="app/src/main/res/drawable/ic_arrow.xml" value="0.1745" />
         <entry key="app/src/main/res/drawable/ic_back.xml" value="0.1485" />
         <entry key="app/src/main/res/drawable/ic_baseline_extension_24.xml" value="0.1485" />
+        <entry key="app/src/main/res/drawable/ic_baseline_logout_24.xml" value="0.1745" />
+        <entry key="app/src/main/res/drawable/ic_baseline_more_vert_24.xml" value="0.1745" />
+        <entry key="app/src/main/res/drawable/ic_baseline_person_24.xml" value="0.1745" />
+        <entry key="app/src/main/res/drawable/ic_baseline_share_24.xml" value="0.1745" />
+        <entry key="app/src/main/res/drawable/ic_call.xml" value="0.1605" />
+        <entry key="app/src/main/res/drawable/ic_chating.xml" value="0.1745" />
         <entry key="app/src/main/res/drawable/ic_computer.xml" value="0.1485" />
         <entry key="app/src/main/res/drawable/ic_contactmail.xml" value="0.1485" />
+        <entry key="app/src/main/res/drawable/ic_developers.xml" value="0.1745" />
+        <entry key="app/src/main/res/drawable/ic_downward.xml" value="0.1745" />
+        <entry key="app/src/main/res/drawable/ic_home.xml" value="0.1745" />
         <entry key="app/src/main/res/drawable/ic_idcard.xml" value="0.1485" />
+        <entry key="app/src/main/res/drawable/ic_image.xml" value="0.1745" />
+        <entry key="app/src/main/res/drawable/ic_internet.xml" value="0.1745" />
         <entry key="app/src/main/res/drawable/ic_label.xml" value="0.1365" />
+        <entry key="app/src/main/res/drawable/ic_launcher_background.xml" value="0.1745" />
+        <entry key="app/src/main/res/drawable/ic_launcherschool_foreground.xml" value="0.1745" />
+        <entry key="app/src/main/res/drawable/ic_launchershs_foreground.xml" value="0.1745" />
+        <entry key="app/src/main/res/drawable/ic_mail.xml" value="0.214" />
         <entry key="app/src/main/res/drawable/ic_theme.xml" value="0.1485" />
         <entry key="app/src/main/res/drawable/ic_video.xml" value="0.1485" />
+        <entry key="app/src/main/res/drawable/ic_website.xml" value="0.1745" />
+        <entry key="app/src/main/res/drawable/main_shape.xml" value="0.1745" />
         <entry key="app/src/main/res/drawable/mainlogo.xml" value="0.213" />
+        <entry key="app/src/main/res/drawable/rectangle_white.xml" value="0.1745" />
         <entry key="app/src/main/res/drawable/search_background.xml" value="0.213" />
+        <entry key="app/src/main/res/drawable/shs_foreground.xml" value="0.1745" />
         <entry key="app/src/main/res/layout/activity_admission.xml" value="0.18136135221562358" />
         <entry key="app/src/main/res/layout/activity_contact_form.xml" value="0.2" />
-        <entry key="app/src/main/res/layout/activity_developer.xml" value="0.22" />
+        <entry key="app/src/main/res/layout/activity_developer.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/activity_developer2.xml" value="0.1287037037037037" />
         <entry key="app/src/main/res/layout/activity_ebook.xml" value="0.20677083333333332" />
         <entry key="app/src/main/res/layout/activity_forget_password.xml" value="0.41354166666666664" />
         <entry key="app/src/main/res/layout/activity_full_image_view.xml" value="0.18342391304347827" />
@@ -43,8 +68,10 @@
         <entry key="app/src/main/res/layout/activity_update_profile.xml" value="0.20677083333333332" />
         <entry key="app/src/main/res/layout/activity_video_lucture.xml" value="0.20729166666666668" />
         <entry key="app/src/main/res/layout/activity_web_site.xml" value="0.10081053698074975" />
+        <entry key="app/src/main/res/layout/activity_webview_acitivity.xml" value="0.22" />
         <entry key="app/src/main/res/layout/activity_xyz.xml" value="0.33" />
         <entry key="app/src/main/res/layout/branch_item_layout.xml" value="0.25" />
+        <entry key="app/src/main/res/layout/content_developer_me.xml" value="0.1287037037037037" />
         <entry key="app/src/main/res/layout/drawer_header.xml" value="0.12364130434782608" />
         <entry key="app/src/main/res/layout/ebook_item_layout.xml" value="0.20677083333333332" />
         <entry key="app/src/main/res/layout/faculty_item_layout.xml" value="0.5" />
@@ -54,14 +81,16 @@
         <entry key="app/src/main/res/layout/fragment_home.xml" value="0.22" />
         <entry key="app/src/main/res/layout/fragment_notice.xml" value="0.18342391304347827" />
         <entry key="app/src/main/res/layout/fragment_quiz.xml" value="0.20677083333333332" />
+        <entry key="app/src/main/res/layout/fragment_second.xml" value="0.20677083333333332" />
         <entry key="app/src/main/res/layout/fragment_student.xml" value="0.20677083333333332" />
         <entry key="app/src/main/res/layout/gallery_image.xml" value="0.20677083333333332" />
-        <entry key="app/src/main/res/layout/head_teacher_item.xml" value="0.33" />
+        <entry key="app/src/main/res/layout/head_teacher_item.xml" value="0.19540229885057472" />
         <entry key="app/src/main/res/layout/newss.xml" value="0.25" />
         <entry key="app/src/main/res/layout/no_data_found.xml" value="0.5" />
         <entry key="app/src/main/res/layout/score_list_item.xml" value="0.20677083333333332" />
         <entry key="app/src/main/res/layout/shammer_for_ebook.xml" value="0.20677083333333332" />
         <entry key="app/src/main/res/layout/stuent_item_layout.xml" value="0.20677083333333332" />
+        <entry key="app/src/main/res/layout/toolbar_layout.xml" value="0.18" />
         <entry key="app/src/main/res/menu/bottom_navation.xml" value="0.33" />
         <entry key="app/src/main/res/menu/navigation_drawer.xml" value="0.75" />
         <entry key="app/src/main/res/menu/option_menu.xml" value="0.20677083333333332" />

@@ -1,4 +1,4 @@
-package com.example.shc_learing_app.otp;
+package com.example.shc_learing_app.phoneAuth;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -64,7 +64,7 @@ public class Setprofile extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_setprofile);
 
-        getSupportActionBar().hide();
+//        getSupportActionBar().hide();
 
         firebaseAuth = FirebaseAuth.getInstance();
         firebaseStorage = FirebaseStorage.getInstance();

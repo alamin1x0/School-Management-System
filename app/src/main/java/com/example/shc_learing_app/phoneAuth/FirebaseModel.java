@@ -1,4 +1,4 @@
-package com.example.shc_learing_app.otp;
+package com.example.shc_learing_app.phoneAuth;
 
 public class FirebaseModel {
 

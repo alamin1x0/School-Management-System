@@ -1,4 +1,4 @@
-package com.example.shc_learing_app.otp;
+package com.example.shc_learing_app.phoneAuth;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -75,7 +75,7 @@ public class UpdateProfile extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_update_profile);
-        getSupportActionBar().hide();
+//        getSupportActionBar().hide();
 
         mtoolbarofupdateprofile = findViewById(R.id.toolbarofupdateprofile);
         mbackbuttonupdateprofile = findViewById(R.id.backbuttonofupdateprofile);

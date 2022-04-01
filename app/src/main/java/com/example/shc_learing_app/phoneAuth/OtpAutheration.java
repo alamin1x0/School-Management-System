@@ -1,4 +1,4 @@
-package com.example.shc_learing_app.otp;
+package com.example.shc_learing_app.phoneAuth;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
@@ -37,7 +37,7 @@ public class OtpAutheration extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_otp_autheration);
 
-        getSupportActionBar().hide();
+//        getSupportActionBar().hide();
 
         mchangenumber = findViewById(R.id.changeNumber);
         mverifyotp = findViewById(R.id.verifyOtp);

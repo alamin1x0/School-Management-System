@@ -40,7 +40,7 @@ public class EbookActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_ebook);
-        getSupportActionBar().setTitle("বই");
+//        getSupportActionBar().setTitle("বই");
 
         ebookRecyler = findViewById(R.id.ebookRecyler);
 

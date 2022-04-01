@@ -1,4 +1,4 @@
-package com.example.shc_learing_app.otp;
+package com.example.shc_learing_app.phoneAuth;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
@@ -41,7 +41,7 @@ public class ManiPhone extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_mani_phone);
-        getSupportActionBar().hide();
+//        getSupportActionBar().hide();
 
 
         mcountryCodePicker = findViewById(R.id.countrycodepicker);

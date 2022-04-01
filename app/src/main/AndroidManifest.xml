@@ -15,76 +15,99 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.SHCLearingApp">
         <activity
+            android:name=".webview.WebviewAcitivity"
+            android:exported="false" />
+        <activity
+            android:name=".developer.DeveloperActivity"
+            android:exported="false" />
+
+        <activity
             android:name=".result.ResultActivity"
             android:exported="false"
             android:screenOrientation="portrait" />
         <activity
             android:name=".ui.quiz.ScorceActivity"
+            android:exported="false"
             android:screenOrientation="portrait" />
         <activity
             android:name=".ui.quiz.StartActivity"
+            android:exported="false"
             android:screenOrientation="portrait" />
         <activity
             android:name=".studentlist.StudentList"
+            android:exported="false"
             android:screenOrientation="portrait" />
         <activity
             android:name=".contact.ContactForm"
+            android:exported="false"
             android:screenOrientation="portrait" />
         <activity
             android:name=".admission.RegistionForm"
-            android:screenOrientation="portrait" />
-        <activity
-            android:name=".developer.developer"
+            android:exported="false"
             android:screenOrientation="portrait" />
         <activity
             android:name=".admission.AdmissionActivity"
+            android:exported="false"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".otp.UpdateProfile"
+            android:name=".phoneAuth.UpdateProfile"
+            android:exported="false"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".otp.ProfileActivity"
+            android:name=".phoneAuth.ProfileActivity"
+            android:exported="false"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".otp.Setprofile"
+            android:name=".phoneAuth.Setprofile"
+            android:exported="false"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".otp.OtpAutheration"
+            android:name=".phoneAuth.OtpAutheration"
+            android:exported="false"
             android:screenOrientation="portrait" />
         <activity
             android:name=".login.ForgetPasswordActivity"
+            android:exported="false"
             android:screenOrientation="portrait" />
         <activity
             android:name=".login.LoginActivity"
+            android:exported="false"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".otp.ManiPhone"
+            android:name=".phoneAuth.ManiPhone"
+            android:exported="false"
             android:screenOrientation="portrait" />
         <activity
             android:name=".login.singUp"
             android:screenOrientation="portrait" />
         <activity
             android:name=".video.VideoLucture"
+            android:exported="false"
             android:parentActivityName=".MainActivity"
             android:screenOrientation="portrait" />
         <activity
             android:name=".website.WebSiteActivity"
+            android:exported="false"
             android:parentActivityName=".MainActivity"
             android:screenOrientation="portrait" />
         <activity
             android:name=".ebook.PdfViewerActivity"
+            android:exported="false"
             android:screenOrientation="portrait" />
         <activity
             android:name=".fullimage.FullImageView"
+            android:exported="false"
             android:screenOrientation="portrait" />
         <activity
             android:name=".ebook.EbookActivity"
+            android:exported="false"
             android:screenOrientation="portrait" />
         <activity
             android:name=".MainActivity"
+            android:exported="false"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".otp.SplashScreen"
+            android:name=".phoneAuth.SplashScreen"
             android:exported="true"
             android:screenOrientation="portrait">
             <intent-filter>
@@ -95,7 +118,7 @@
         </activity>
 
         <service
-            android:name="com.example.shc_learing_app.MyFirebaseMessagingService"
+            android:name=".MyFirebaseMessagingService"
             android:enabled="true"
             android:exported="true"
             tools:ignore="Instantiatable">
@@ -105,13 +128,14 @@
         </service>
 
         <meta-data
+            android:name="com.google.android.gms.ads.APPLICATION_ID"
+            android:value="@string/admob_app_id" />
+        <meta-data
             android:name="com.google.firebase.messaging.default_notification_icon"
             android:resource="@mipmap/ic_launcherschool" />
-
         <meta-data
             android:name="com.google.firebase.messaging.default_notification_color"
             android:resource="@color/red" />
-
     </application>
 
 </manifest>

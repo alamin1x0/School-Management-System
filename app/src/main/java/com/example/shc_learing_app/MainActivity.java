@@ -5,6 +5,7 @@ import androidx.appcompat.app.ActionBarDrawerToggle;
 import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.app.AppCompatDelegate;
+import androidx.appcompat.widget.Toolbar;
 import androidx.core.view.GravityCompat;
 import androidx.drawerlayout.widget.DrawerLayout;
 import androidx.navigation.NavController;
@@ -23,14 +24,12 @@ import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
-import android.widget.Toast;
 
 import com.example.shc_learing_app.admission.AdmissionActivity;
 import com.example.shc_learing_app.contact.ContactForm;
-import com.example.shc_learing_app.developer.developer;
+import com.example.shc_learing_app.developer.DeveloperActivity;
 import com.example.shc_learing_app.ebook.EbookActivity;
 import com.example.shc_learing_app.result.ResultActivity;
-import com.example.shc_learing_app.studentlist.StudentList;
 import com.example.shc_learing_app.video.VideoLucture;
 import com.example.shc_learing_app.website.WebSiteActivity;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
@@ -55,6 +54,8 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
     private int checkedItem;
     private String selected;
 
+    private Toolbar toolbar;
+
     private final String CHECKEDITEM = "checked_item";
 
     private FirebaseAuth auth;
@@ -63,6 +64,8 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        toolbar = findViewById(R.id.toolbarId);
+        setSupportActionBar(toolbar);
         setTitle("");
 
 
@@ -225,7 +228,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
                 break;
 
             case R.id.navigation_developer:
-                intent = new Intent(MainActivity.this, developer.class);
+                intent = new Intent(MainActivity.this, DeveloperActivity.class);
                 startActivity(intent);
                 break;
 
@@ -246,44 +249,6 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
                     this.startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("http://play.google.com/store/apps/details?id=" + appName)));
                 }
                 break;
-
-
-//            case R.id.logout:
-//                editor.putString("isLogin", "false");
-//                editor.commit();
-//                openLogin();
-//                break;
-
-
-//            case R.id.navigation_theme:
-//                showDialog();
-//                break;
-
-
-//            case R.id.navigation_share:
-//                try {
-//                    Intent i = new Intent(Intent.ACTION_SEND);
-//                    i.setType("text/plain");
-//                    i.putExtra(Intent.EXTRA_SUBJECT, "SHS_LEARING_APP");
-//                    i.putExtra(Intent.EXTRA_TEXT, "https://firebasestorage.googleapis.com/v0/b/admin-dash-42c58.appspot.com/o/App%2FSHS_Testing.apk?alt=media&token=75da9ae6-dd5d-435f-9f4c-68ebb8300327" + getApplicationContext().getPackageName());
-//                    startActivity(Intent.createChooser(i, "Share With"));
-//                } catch (Exception e) {
-//                    Toast.makeText(this, "Unable to share this app.", Toast.LENGTH_SHORT).show();
-//                }
-//
-//                break;
-
-
-//            case R.id.navigation_rate:
-//                Uri uri = Uri.parse("https://drive.google.com/file/d/1IH8mFbndgmL45p4agVJvCMjFWwKNXw7N/view?usp=sharing"+getApplicationContext().getPackageName());
-//                Intent i  = new Intent(Intent.ACTION_VIEW,uri);
-//                try {
-//                    startActivity(i);
-//                }catch (Exception e){
-//                    Toasty.success(this,"Unable to open\n"+e.getMessage(), Toast.LENGTH_SHORT).show();
-//                }
-//                break;
-
 
         }
         return true;

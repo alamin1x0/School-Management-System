@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".otp.SplashScreen">
+    tools:context=".phoneAuth.SplashScreen">
 
     <ImageView
         android:id="@+id/imagView"
@@ -23,7 +23,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_margin="10dp"
-        android:text="SHS App "
+        android:text="@string/app_name"
         android:textColor="@color/red"
         android:textSize="32dp"
         app:layout_constraintEnd_toEndOf="parent"
@@ -36,7 +36,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="50dp"
         android:gravity="center"
-        android:text="শ্যামপুর উচ্চ বিদ্যালয়, জয়পুরহাট"
+        android:text="@string/school_name"
         android:textColor="@color/red"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"

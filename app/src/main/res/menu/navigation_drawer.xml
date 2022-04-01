@@ -1,17 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
 
-    <!--    <item-->
-    <!--        android:id="@+id/navigation_profile"-->
-    <!--        android:icon="@drawable/newprofil"-->
-    <!--        android:title="প্রোফাইল" />-->
-
-    <!--    <item-->
-    <!--        android:id="@+id/navigation_quiz"-->
-    <!--        android:icon="@drawable/ic_baseline_extension_24"-->
-    <!--        android:title="কুইজ" />-->
-
-
     <item
         android:id="@+id/navigation_video"
         android:icon="@drawable/newvideo"

@@ -69,7 +69,7 @@ public class AdmissionActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_admission);
 //        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
-        getSupportActionBar().setTitle("ভর্তি ফরম");
+//        getSupportActionBar().setTitle("ভর্তি ফরম");
 
         studentnameBangla = findViewById(R.id.studentnameBangla);
         studentnameEnglish = findViewById(R.id.studentnameEnglish);

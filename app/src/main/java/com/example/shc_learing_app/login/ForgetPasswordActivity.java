@@ -27,7 +27,7 @@ public class ForgetPasswordActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_forget_password);
-        getSupportActionBar().hide();
+//        getSupportActionBar().hide();
 
         auth = FirebaseAuth.getInstance();
 

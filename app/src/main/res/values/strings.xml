@@ -2,9 +2,6 @@
     <string name="app_name"> SHS </string>
 
 
-    <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
-
     <string name="start">Start</string>
     <string name="close">Close</string>
 
@@ -27,11 +24,40 @@
     <string name="share_app_message">SHS Learing App</string>
 
     <string-array name="theme">
-
         <item>System Default</item>
         <item>Dark</item>
         <item>Light</item>
-
     </string-array>
+
+
+    <!--AdMob Id-->
+    <string name="admob_app_id">ca-app-pub-4926661352443338~9871786862</string>
+    <!--    <string name="admob_app_id">ca-app-pub-3940256099942544~3347511713</string>-->
+    <string name="admob_banner_ad">ca-app-pub-4926661352443338/2731663449</string>
+
+
+    <string name="about_content">Version: 1.0\nDeveloped by:-\alaminsakib.cse@gmail.com</string>
+    <string name="aboutInfo"> "আমার নাম আল-আমিন। আমি একজন অ্যান্ড্রয়েড অ্যাপ ডেভেলপার। অ্যান্ড্রয়েড অ্যাপ ডেভেলপমেন্টে আমার 2+ বছরেরও বেশি অভিজ্ঞতা রয়েছে। গ্রাহকদের সন্তুষ্টিই আমার চূড়ান্ত লক্ষ্য। আমি প্রতিদিন নতুন কিছু শেখার চেষ্টা করি।" </string>
+
+
+    <!--About Page-->
+    <string name="version_name">Version</string>
+    <string name="version_tag">1.0.0</string>
+    <string name="company_name_title">Company</string>
+    <string name="company_tag_name">Developer Al-Amin</string>
+    <string name="email_title">Email</string>
+    <string name="email_tag">alaminsakib.cse@gmail.com</string>
+    <string name="website_title">Website</string>
+    <string name="website_tag">https://developer-alamin.web.app/</string>
+    <string name="contact_title">Contact</string>
+    <string name="contact_tag">+8801929284244</string>
+    <string name="privacy_title">Privacy Policy</string>
+    <string name="privacy_tag">Click to Read Privacy Policy</string>
+    <string name="about_title">About</string>
+    <string name="second_how_too">2. Share with All in One Status Saver</string>
+    <string name="fourth_how_too">2. Open All in One Status Saver</string>
+    <string name="tag_line">Shyampur High School, Joypurhat</string>
+    <string name="school_name">শ্যামপুর উচ্চ বিদ্যালয়, জয়পুরহাট</string>
+
 
 </resources>

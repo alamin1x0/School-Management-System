@@ -17,10 +17,9 @@ public class WebSiteActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_web_site);
-//        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
-//        getSupportActionBar().setTitle("Website");
 
-        getSupportActionBar().hide();
+
+//        getSupportActionBar().hide();
 
         webView=(WebView) findViewById(R.id.webViewId);
 

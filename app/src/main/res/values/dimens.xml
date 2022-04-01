@@ -11,6 +11,7 @@
 
     <dimen name="title_size">22sp</dimen>
     <dimen name="title_size2">20sp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
 
 
 </resources>
