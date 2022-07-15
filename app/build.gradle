@@ -82,4 +82,9 @@ dependencies {
 
     implementation 'com.github.tejpratap46:PDFCreatorAndroid:3.0.2'
 
+    implementation 'com.makeramen:roundedimageview:2.3.0'
+
+    implementation 'com.intuit.sdp:sdp-android:1.0.6'
+
+
 }

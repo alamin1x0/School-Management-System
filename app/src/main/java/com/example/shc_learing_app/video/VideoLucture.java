@@ -17,10 +17,6 @@ public class VideoLucture extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_video_lucture);
-//        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
-//        getSupportActionBar().setTitle("Video");
-
-        getSupportActionBar().hide();
 
         webView=(WebView) findViewById(R.id.webViewId);
 

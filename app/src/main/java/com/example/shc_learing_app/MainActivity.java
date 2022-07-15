@@ -1,5 +1,7 @@
 package com.example.shc_learing_app;
 
+import static com.example.shc_learing_app.until.Utils.WebSite;
+
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.ActionBarDrawerToggle;
 import androidx.appcompat.app.AlertDialog;
@@ -24,6 +26,7 @@ import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
+import android.view.View;
 
 import com.example.shc_learing_app.admission.AdmissionActivity;
 import com.example.shc_learing_app.contact.ContactForm;
@@ -32,6 +35,7 @@ import com.example.shc_learing_app.ebook.EbookActivity;
 import com.example.shc_learing_app.result.ResultActivity;
 import com.example.shc_learing_app.video.VideoLucture;
 import com.example.shc_learing_app.website.WebSiteActivity;
+import com.example.shc_learing_app.webview.WebviewAcitivity;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 import com.google.android.material.dialog.MaterialAlertDialogBuilder;
 import com.google.android.material.navigation.NavigationView;
@@ -77,10 +81,10 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         if (!isConnected()) {
             new AlertDialog.Builder(this)
                     .setIcon(android.R.drawable.ic_dialog_alert)
-                    .setTitle("Internet Connection Please")
-                    .setMessage("Please Check your Internet Connection")
+                    .setTitle("ইন্টারনেট সংযোগ দয়া করে")
+                    .setMessage("আপনার ইন্টারনেট সংযোগ পরীক্ষা করুন")
                     .setCancelable(false)
-                    .setPositiveButton("Close", new DialogInterface.OnClickListener() {
+                    .setPositiveButton("বন্ধ", new DialogInterface.OnClickListener() {
                         @Override
                         public void onClick(DialogInterface dialog, int which) {
                             finish();
@@ -113,7 +117,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         navigationView = findViewById(R.id.navigation_view);
 
         toggle = new ActionBarDrawerToggle(this, drawerLayout, R.string.start, R.string.close);
-
+        toggle.getDrawerArrowDrawable().setColor(getResources().getColor(R.color.white));
         drawerLayout.addDrawerListener(toggle);
         toggle.syncState();
 
@@ -180,7 +184,6 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         Intent intent;
         switch (item.getItemId()) {
 
-
 //            case R.id.navigation_profile:
 //                intent = new Intent(MainActivity.this, ProfileActivity.class);
 //                startActivity(intent);
@@ -196,6 +199,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
                 intent = new Intent(MainActivity.this, VideoLucture.class);
                 startActivity(intent);
                 break;
+
 
             case R.id.navigation_ebook:
                 startActivity(new Intent(this, EbookActivity.class));
@@ -238,7 +242,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
                 sendInt.putExtra(Intent.EXTRA_SUBJECT, this.getString(R.string.app_name));
                 sendInt.putExtra(Intent.EXTRA_TEXT, this.getString(R.string.share_app_message) + appLink);
                 sendInt.setType("text/plain");
-                this.startActivity(Intent.createChooser(sendInt, "Share"));
+                this.startActivity(Intent.createChooser(sendInt, "শেয়ার"));
                 break;
 
             case R.id.navigation_rate:

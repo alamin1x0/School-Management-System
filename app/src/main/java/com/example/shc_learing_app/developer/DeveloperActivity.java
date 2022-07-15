@@ -1,5 +1,6 @@
 package com.example.shc_learing_app.developer;
 
+import static com.example.shc_learing_app.until.Utils.PrivacyPolicyUrl;
 import static com.example.shc_learing_app.until.Utils.WebSite;
 
 import androidx.appcompat.app.AppCompatActivity;
@@ -29,6 +30,16 @@ public class DeveloperActivity extends AppCompatActivity {
                 Intent i = new Intent(DeveloperActivity.this, WebviewAcitivity.class);
                 i.putExtra("URL", WebSite);
                 i.putExtra("Title", "Al-Amin");
+                startActivity(i);
+            }
+        });
+
+        RLWebsite.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent i = new Intent(DeveloperActivity.this, WebviewAcitivity.class);
+                i.putExtra("URL", PrivacyPolicyUrl);
+                i.putExtra("Title", "Privacy Policy");
                 startActivity(i);
             }
         });

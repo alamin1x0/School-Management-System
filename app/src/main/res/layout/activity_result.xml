@@ -24,7 +24,7 @@
             android:gravity="center"
             android:padding="10dp"
             android:paddingBottom="20dp"
-            android:text="Result"
+            android:text="রেজাল্ট"
             android:textAllCaps="true"
             android:textColor="@color/white"
             android:textSize="22sp"
@@ -59,7 +59,7 @@
                 android:id="@+id/inputRollId"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:hint="Roll"
+                android:hint="রোল"
                 android:imeOptions="actionDone"
                 android:importantForAutofill="auto"
                 android:inputType="number" />

@@ -41,23 +41,41 @@
 
 
     <!--About Page-->
-    <string name="version_name">Version</string>
-    <string name="version_tag">1.0.0</string>
-    <string name="company_name_title">Company</string>
+    <string name="version_name">ভার্সন</string>
+    <string name="version_tag">১.০ </string>
+    <string name="company_name_title">কোম্পানি</string>
     <string name="company_tag_name">Developer Al-Amin</string>
-    <string name="email_title">Email</string>
+    <string name="email_title">ইমেইল </string>
     <string name="email_tag">alaminsakib.cse@gmail.com</string>
-    <string name="website_title">Website</string>
+    <string name="website_title">ওয়েবসাইট</string>
     <string name="website_tag">https://developer-alamin.web.app/</string>
-    <string name="contact_title">Contact</string>
+    <string name="contact_title">যোগাযোগ</string>
     <string name="contact_tag">+8801929284244</string>
-    <string name="privacy_title">Privacy Policy</string>
-    <string name="privacy_tag">Click to Read Privacy Policy</string>
-    <string name="about_title">About</string>
-    <string name="second_how_too">2. Share with All in One Status Saver</string>
-    <string name="fourth_how_too">2. Open All in One Status Saver</string>
-    <string name="tag_line">Shyampur High School, Joypurhat</string>
+    <string name="privacy_title">প্রাইভেসি পলিসি</string>
+    <string name="privacy_tag">প্রাইভেসি পলিসি পড়তে ক্লিক করুন</string>
+    <string name="about_title">অ্যাবাউট্</string>
+    <string name="second_how_too">2. Share with SHS</string>
+    <string name="fourth_how_too">2. Open SHS</string>
+    <string name="tag_line">শ্যামপুর উচ্চ বিদ্যালয়, জয়পুরহাট</string>
     <string name="school_name">শ্যামপুর উচ্চ বিদ্যালয়, জয়পুরহাট</string>
+
+
+    <!--About-->
+    <string name="about">About Us</string>
+    <string name="rate_the_app">Rate the app</string>
+    <string name="love_this_app">Love this app? Let us Know in the Google Play Store how we can make it even better</string>
+    <string name="share">Share</string>
+    <string name="share_the_app">Share the app with your friends and family</string>
+    <string name="company">Company</string>
+    <string name="email">Email</string>
+    <string name="version">Version</string>
+    <string name="website">Website</string>
+    <string name="contact">Contact</string>
+
+    <!--Don't Change language-->
+    <string name="todo">TODO</string>
+
+
 
 
 </resources>

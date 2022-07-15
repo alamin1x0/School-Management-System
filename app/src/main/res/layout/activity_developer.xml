@@ -142,8 +142,7 @@
                         android:layout_height="30dp"
                         android:layout_alignParentEnd="true"
                         android:layout_centerVertical="true"
-                        android:layout_marginEnd="10dp"
-                        android:src="@drawable/ic_arrow" />
+                        android:layout_marginEnd="10dp" />
                 </RelativeLayout>
 
                 <RelativeLayout
@@ -201,8 +200,7 @@
                         android:layout_height="30dp"
                         android:layout_alignParentEnd="true"
                         android:layout_centerVertical="true"
-                        android:layout_marginEnd="10dp"
-                        android:src="@drawable/ic_arrow" />
+                        android:layout_marginEnd="10dp"/>
                 </RelativeLayout>
 
                 <RelativeLayout
@@ -258,8 +256,7 @@
                         android:layout_height="30dp"
                         android:layout_alignParentEnd="true"
                         android:layout_centerVertical="true"
-                        android:layout_marginEnd="10dp"
-                        android:src="@drawable/ic_arrow" />
+                        android:layout_marginEnd="10dp" />
                 </RelativeLayout>
 
                 <RelativeLayout
